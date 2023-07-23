@@ -1,0 +1,4 @@
+#!/bin/env sh
+
+pamixer -i 7 
+kill -34 "$(cat ~/.cache/pidofbar)"

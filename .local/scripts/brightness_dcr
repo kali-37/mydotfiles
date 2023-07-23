@@ -1,0 +1,36 @@
+#!/bin/env sh
+
+#read -r actual_brightness </sys/class/backlight/intel_backlight/actual_brightness
+#read -r max_brightness </sys/class/backlight/intel_backlight/max_brightness
+#percentage=$((actual_brightness * 100 / max_brightness))
+#new_brightness=$(((percentage - 10) * 10))
+
+#if [ "$new_brightness" -lt 50 ]; then
+#    new_brightness=50
+#fi
+#echo "$new_brightness" > /sys/class/backlight/intel_backlight/brightness
+
+
+current_brightness=$(brightnessctl g)
+max_brightness=$(brightnessctl m)
+decrease_percentage=10
+
+# Calculate the decrease amount
+decrease_amount=$((current_brightness * decrease_percentage / 100))
+
+# Calculate the new brightness value
+new_brightness=$((current_brightness - decrease_amount))
+
+# Make sure the new brightness is within the valid range
+if ((new_brightness < 11)); then
+    new_brightness=11
+fi
+
+# Set the new brightness
+brightnessctl s "$new_brightness"
+
+
+
+
+
+kill -35 "$(cat ~/.cache/pidofbar)"

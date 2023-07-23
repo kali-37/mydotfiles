@@ -1,0 +1,149 @@
+#!/bin/env sh
+
+# INIT
+printf "$$" > ~/.cache/pidofbar
+sec=0
+
+# MODULES
+update_internet(){
+
+# Show wifi 📶 and percent strength or 📡 if none.
+# Show 🌐 if connected to ethernet or ❎ if none.
+# Show 🔒 if a vpn connection is active
+
+case $BLOCK_BUTTON in
+    1) "$TERMINAL" -e nmtui; pkill -RTMIN+4 dwmblocks ;;
+    3) notify-send "🌐 Internet module" "\
+- Click to connect
+❌: wifi disabled
+📡: no wifi connection
+📶: wifi connection with quality
+❎: no ethernet
+🌐: ethernet working
+🔒: vpn is active
+" ;;
+    6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+if grep -xq 'up' /sys/class/net/w*/operstate 2>/dev/null ; then
+    wifiicon="$(awk '/^\s*w/ { print "📶", int($3 * 100 / 70) "% " }' /proc/net/wireless)"
+elif grep -xq 'down' /sys/class/net/w*/operstate 2>/dev/null ; then
+    grep -xq '0x1003' /sys/class/net/w*/flags && wifiicon="📡 " || wifiicon="❌ "
+fi
+
+if grep -xq 'up' /sys/class/net/e*/operstate 2>/dev/null ; then
+    etherneticon="🌐"
+elif grep -xq 'down' /sys/class/net/e*/operstate 2>/dev/null ; then
+    etherneticon="❎"
+fi
+
+if grep -q 'tun' /sys/class/net/*/operstate 2>/dev/null ; then
+    vpnicon="🔒"
+fi
+
+wifivalue=$(printf "%s%s%s\n" "$wifiicon" "$etherneticon" "$vpnicon")
+}
+
+
+update_cpu () { 
+	cpu="$(grep -o "^[^ ]*" /proc/loadavg )" 
+}
+
+update_memory () { 
+	memory="$(free -h | sed -n "2s/\([^ ]* *\)\{2\}\([^ ]*\).*/\2/p")"
+}
+
+update_time () { 
+	time="📆$(date "+[%a %d %b] [%I:%M %P]")" 
+}
+
+update_weather () { 
+	weather="$(curl -s "wttr.in?format=1"| sed -E "s/^(.).*\+/\1/")" 
+}
+
+update_bat () { 
+	# you might need to change the path depending on your device
+	read -r bat_status </sys/class/power_supply/BAT1/status
+	read -r bat_capacity </sys/class/power_supply/BAT1/capacity
+	if [ "$bat_status" = "Charging" ]; then
+		bat_status="🔌"
+	else
+		bat_status="🔋"
+	fi
+	bat="$bat_status $bat_capacity%"
+
+}
+
+update_vol () { 
+	vol="$([ "$(pamixer --get-mute)" = "false" ] && printf '🔊' || printf '🔇')$(pamixer --get-volume)%"
+}
+
+update_backlight () { 
+first="🌔 "
+second="💡"
+third="🔆"
+
+function condition() {
+    percentage=$1
+    if (( $(echo "$percentage < 33" ) )); then
+        backlight="$first"
+    elif (( $(echo "$percentage < 66" ) )); then
+        backlight="$second"
+    else
+        backlight="$third"
+    fi
+}
+
+# You might need to change the path depending on your device
+read -r actual_brightness </sys/class/backlight/intel_backlight/actual_brightness
+read -r max_brightness </sys/class/backlight/intel_backlight/max_brightness
+percentage=$((actual_brightness * 100 / max_brightness))
+condition "$percentage"
+
+}
+
+# For calcurse users, refer https://github.com/pystardust/automeet
+#update_event () { 
+#	event="$(calcurse -n | sed 1d | \
+#		sed -E "s_^ *\[(.*):(.*)\] ([^\t]*)\t?.*_[\1h \2m->\3]_")" 
+#	[ "[]" = "$event" ] && event=""
+#}
+
+
+# modules that don't update on their own need to be run at the start for getting their initial value
+update_vol
+update_backlight
+
+display () { 
+	#printf "%s\n" " $event [$weather] [$memory $cpu] [$bat] [$backlight] [$vol] $time "
+	xsetroot -name " [$weather] [$memory $cpu] [$wifivalue] [$bat] [$backlight] [$vol] $time "
+}
+# SIGNALLING
+# trap	"<function>;display"		"RTMIN+n"
+trap	"update_vol;display"		"RTMIN"
+trap	"update_backlight;display" 	"RTMIN+1"
+trap	"update_bat;display" 		"RTMIN+2"
+# to update it from external commands
+## kill -m "$(cat ~/.cache/pidofbar)"
+# where m = 34 + n
+
+while true
+do
+	sleep 1 & wait && { 
+		# to update item ever n seconds with a offset of m
+		## [ $((sec % n)) -eq m ] && udpate_item
+		[ $((sec % 5 )) -eq 0 ] && update_time 	# update time every 5 seconds
+		[ $((sec % 15)) -eq 0 ] && update_cpu 	# update cpu every 15 seconds
+		[ $((sec % 15)) -eq 0 ] && update_memory
+		[ $((sec % 60)) -eq 0 ] && update_bat
+		[ $((sec % 3600)) -eq 2 ] && update_weather 
+		#[ $((sec % 300)) -eq 1 ] && update_event
+
+		[ $((sec % 5)) -eq 2 ] && update_internet 
+		# how often the display updates ( 5 seconds )
+		[ $((sec % 5000 )) -eq 0 ] && display
+		sec=$((sec + 1))
+	}
+done 
+
+
