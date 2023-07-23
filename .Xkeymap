@@ -1,0 +1,26 @@
+keycode 87 = 1 exclam
+keycode 88 = 2 at
+keycode 89 = 3 numbersign
+keycode 83 = 4 dollar
+keycode 84 = 5 percent
+keycode 85 = 6 asciicircum
+keycode 79 = 7 ampersand
+keycode 80 = 8 asterisk
+keycode 81 = 9 parenleft
+keycode 90 = 0 parenright
+keycode 82 = minus underscore
+keycode 86 = equal plus
+
+
+clear lock
+clear control
+keycode 66 = Control_L
+add control = Control_L
+add Lock = Control_R
+
+
+
+
+
+
+
