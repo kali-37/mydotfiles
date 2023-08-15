@@ -4,5 +4,5 @@ set number relativenumber
 syntax enable
 packadd! dracula
 colorscheme dracula
-
+set clipboard=unnamedplus
 

@@ -38,12 +38,10 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "brave-browser",     "brave-browser",       "BRAVE Browser",       1,            1,           -1 },
-	{ "emacs",  "Emacs",       NULL,       1 << 1,    1,          -1 },
-	{ "brave",     "brave",       NULL,       0,            1,           -1 },
-	
-	{ "thunar",     "thunar",     "FILE MANAGER" ,       1<<2,            1,           -1 },
-
+	{ "brave",     NULL,       NULL,       0,            1,           -1 },
+	{ "Emacs",  NULL,       NULL,       1 << 8,       0,           -1 },
+        { NULL,       NULL,       "Monitor1", 1 << 0,       False,       0 },  // Monitor1
+        { NULL,       NULL,       "Monitor2", 1 << 1,       False,       1 },  // Monitor2
 };
 
 /* layout(s) */
@@ -66,9 +64,6 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
-
-
-	
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
@@ -112,20 +107,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-/* added two tags keys to rotate left and right throught */
-	{ Mod4Mask,                    XK_Right, rotateview,           {.i = +1} },
-	{ Mod4Mask,                    XK_Left,  rotateview,           {.i = -1} },
-/*
-TAGKEYS_LEFT(                   XK_Left, 1)    // Rotate tags backward
-TAGKEYS_RIGHT(                  XK_Right, 1)   // Rotate tags forward
-*/
-        { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-
-// Rotate viewing tags  from 
-
-//        { MODKEY|ShiftMask, XK_Left, rotate_tags, {.i = -1} }, // Rotate tags backward
-  //      { MODKEY|ShiftMask, XK_Right, rotate_tags, {.i = 1} }, // Rotate tags forward
-
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 
 };
 

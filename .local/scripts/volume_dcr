@@ -1,4 +1,4 @@
 #!/bin/env sh
 
-pamixer -d 7 
+pamixer -d 5 
 kill -34 "$(cat ~/.cache/pidofbar)"

@@ -48,3 +48,5 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+(add-to-list 'package-archives '("gnu-devel" . "https://elpa.gnu.org/devel/"))

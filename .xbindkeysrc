@@ -84,12 +84,14 @@
 "systemctl suspend"
   control+mod1+s  
 
-"emc"
+"emc &"
   control+mod1+e
 
-"brave"
+"brave &"
   control+mod1+b
 
+"screenshoter &"
+  Print
 
 
 

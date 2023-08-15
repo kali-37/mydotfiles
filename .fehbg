@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/kali_37/.config/wallpapers/japan_sene.jpg' '/home/kali_37/.config/wallpapers/house.jpg' '/home/kali_37/.config/wallpapers/indoneasia.jpg' '/home/kali_37/.config/wallpapers/chakras.jpg' '/home/kali_37/.config/wallpapers/karkanda.jpg' 
+feh --no-fehbg --bg-scale '/home/kali_37/.config/wallpapers/karkanda.jpg' '/home/kali_37/.config/wallpapers/chakras.jpg' '/home/kali_37/.config/wallpapers/house.jpg' '/home/kali_37/.config/wallpapers/indoneasia.jpg' '/home/kali_37/.config/wallpapers/japan_sene.jpg' 

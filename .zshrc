@@ -74,7 +74,9 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	virtualenv        
 )
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,3 +120,5 @@ alias emacs="emacsclient -c -a 'emacs'"
 alias grep='grep --color=auto'
 export PATH="$HOME/.local/scripts:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local:$PATH"
