@@ -1,10 +1,3 @@
-cd kali_37/
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
 ls
 cd ..
 ls
@@ -495,6 +488,13 @@ clear
 ls
 vim .xinitrc
 sudo reboot
+exit
+exit
+exit
+source /home/kali_37/Documents/Django_/Django_rest/bin/activate
+exit
+clear
+exit
 exit
 exit
 exit

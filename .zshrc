@@ -111,7 +111,7 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
-
+alias vim='nvim'
 # emacs client 
 alias emacs="emacsclient -c -a 'emacs'"
 
@@ -122,3 +122,6 @@ export PATH="$HOME/.local/scripts:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local:$PATH"
+export WORKON_HOME=$HOME/.local/share/virtualenvs
+export PIP_VIRTUALENV_BASE=$HOME/.local/share/virtualenvs
+

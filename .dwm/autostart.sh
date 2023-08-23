@@ -1,6 +1,5 @@
 ! /usr/bin/env sh
-sbar & 
-feh --randomize --bg-scale ~/.config/wallpapers/* & 
-sleep infinity
+nohup sbar & 
+nohup ~/.dwm/wallpaper.sh & 
 
 
