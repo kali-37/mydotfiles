@@ -713,7 +713,21 @@
     },
   },
   "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/vscode.vim",
-  "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Default Dark+",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "c": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "workbench.editor.showTabs": false,
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": -1,
+  "workbench.activityBar.visible": false,
+  "files.autoSave": "afterDelay",
 }

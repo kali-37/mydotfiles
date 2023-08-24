@@ -5,9 +5,18 @@
     "command": "actions.findWithSelection"
   },
   {
-    "key": "ctrl+e",
+    "key": "ctrl+shift+e",
     "command": "-actions.findWithSelection"
   },
+  {
+    "key":"ctrl+shift+c",
+    "command":"editor.action.clipboardCopyAction"
+  },
+  {
+    "key":"ctrl+shift+v",
+    "command":"editor.action.clipboardPasteAction"
+  },
+
   {
     "key": "ctrl+e",
     "command": "workbench.view.explorer"
