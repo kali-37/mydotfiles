@@ -1,11 +1,3 @@
-ls
-cd ..
-ls
-cd home
-clear
-ls
-cd kali_37/
-ls
 ls kali_37/
 ls kali_37/
 cd home/
@@ -497,4 +489,12 @@ clear
 exit
 exit
 exit
+exit
+ls
+vim init.lua
+exit
+vim alacritty.yml 
+vi alacritty.yml 
+vi alacritty.yml
+clear
 exit

@@ -135,7 +135,7 @@ do
 		[ $((sec % 2 )) -eq 0 ] && update_time 	# update time every 5 seconds
 		[ $((sec % 5)) -eq 0 ] && update_cpu 	# update cpu every 15 seconds
 		[ $((sec % 5)) -eq 0 ] && update_memory
-		[ $((sec % 5)) -eq 0 ] && update_bat
+		[ $((sec % 2)) -eq 0 ] && update_bat
 		[ $((sec % 3600)) -eq 2 ] && update_weather 
 		#[ $((sec % 300)) -eq 1 ] && update_event
 

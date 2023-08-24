@@ -116,7 +116,7 @@ alias vim='nvim'
 alias emacs="emacsclient -c -a 'emacs'"
 
 
-
+bindkey -v
 alias grep='grep --color=auto'
 export PATH="$HOME/.local/scripts:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"

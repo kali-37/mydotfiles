@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1692723802,,"q"
+|2,0,1692871570,,"q"
 :wq
 |2,0,1692723689,,"wq"
 :q!
@@ -174,9 +174,11 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	8
-|3,0,0,0,1,0,1692525416,"8"
+""0	BLOCK	23
+	    y: 10
+	  class:
+	    instance: Alacritty
+|3,1,0,2,3,23,1692871558,"    y: 10","  class:","    instance: Alacritty"
 "1	LINE	0
 	      xrandr --output eDP1 --pos 0x0
 |3,0,1,1,1,0,1692721085,"      xrandr --output eDP1 --pos 0x0"
@@ -207,39 +209,79 @@ $
 "q	CHAR	0
 	:w€kbq
 |3,0,26,0,1,0,1689513877,":w€kbq"
-""-	CHAR	0
+"-	CHAR	0
 	"
-|3,1,36,0,1,0,1692723672,"\""
+|3,0,36,0,1,0,1692723672,"\""
 
 # File marks:
-'0  28  19  ~/.local/scripts/batterynotify
-|4,48,28,19,1692723802,"~/.local/scripts/batterynotify"
-'1  117  0  ~/.zshrc
-|4,49,117,0,1692723689,"~/.zshrc"
+'0  5  0  ~/.config/alacritty/alacritty.yml
+|4,48,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
+'1  1  0  ~/.config/nvim/init.lua
+|4,49,1,0,1692853594,"~/.config/nvim/init.lua"
 '2  28  19  ~/.local/scripts/batterynotify
-|4,50,28,19,1692723643,"~/.local/scripts/batterynotify"
-'3  2  15  ~/monitor.sh
-|4,51,2,15,1692721161,"~/monitor.sh"
-'4  16  26  ~/monitor.sh
-|4,52,16,26,1692721116,"~/monitor.sh"
-'5  16  26  ~/monitor.sh
-|4,53,16,26,1692721116,"~/monitor.sh"
-'6  1  0  ~/mo
-|4,54,1,0,1692721017,"~/mo"
-'7  1  0  ~/mo
-|4,55,1,0,1692721017,"~/mo"
-'8  16  67  ~/monitor.sh
-|4,56,16,67,1692721000,"~/monitor.sh"
-'9  16  67  ~/monitor.sh
-|4,57,16,67,1692721000,"~/monitor.sh"
+|4,50,28,19,1692723802,"~/.local/scripts/batterynotify"
+'3  117  0  ~/.zshrc
+|4,51,117,0,1692723689,"~/.zshrc"
+'4  28  19  ~/.local/scripts/batterynotify
+|4,52,28,19,1692723643,"~/.local/scripts/batterynotify"
+'5  2  15  ~/monitor.sh
+|4,53,2,15,1692721161,"~/monitor.sh"
+'6  16  26  ~/monitor.sh
+|4,54,16,26,1692721116,"~/monitor.sh"
+'7  16  26  ~/monitor.sh
+|4,55,16,26,1692721116,"~/monitor.sh"
+'8  1  0  ~/mo
+|4,56,1,0,1692721017,"~/mo"
+'9  1  0  ~/mo
+|4,57,1,0,1692721017,"~/mo"
 
 # Jumplist (newest first):
+-'  5  0  ~/.config/alacritty/alacritty.yml
+|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
+-'  9  0  ~/.config/alacritty/alacritty.yml
+|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
+-'  1  0  ~/.config/alacritty/alacritty.yml
+|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
+-'  1  0  ~/.config/nvim/init.lua
+|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
+-'  1  0  ~/.config/nvim/init.lua
+|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
 -'  28  19  ~/.local/scripts/batterynotify
 |4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
 -'  117  0  ~/.zshrc
 |4,39,117,0,1692723689,"~/.zshrc"
 -'  117  0  ~/.zshrc
 |4,39,117,0,1692723689,"~/.zshrc"
+-'  117  0  ~/.zshrc
+|4,39,117,0,1692723689,"~/.zshrc"
+-'  117  0  ~/.zshrc
+|4,39,117,0,1692723689,"~/.zshrc"
+-'  117  0  ~/.zshrc
+|4,39,117,0,1692723689,"~/.zshrc"
+-'  117  0  ~/.zshrc
+|4,39,117,0,1692723689,"~/.zshrc"
+-'  117  0  ~/.zshrc
+|4,39,117,0,1692723689,"~/.zshrc"
+-'  117  0  ~/.zshrc
+|4,39,117,0,1692723689,"~/.zshrc"
+-'  9  0  ~/.zshrc
+|4,39,9,0,1692723678,"~/.zshrc"
+-'  9  0  ~/.zshrc
+|4,39,9,0,1692723678,"~/.zshrc"
+-'  9  0  ~/.zshrc
+|4,39,9,0,1692723678,"~/.zshrc"
+-'  9  0  ~/.zshrc
+|4,39,9,0,1692723678,"~/.zshrc"
+-'  9  0  ~/.zshrc
+|4,39,9,0,1692723678,"~/.zshrc"
+-'  9  0  ~/.zshrc
+|4,39,9,0,1692723678,"~/.zshrc"
 -'  9  0  ~/.zshrc
 |4,39,9,0,1692723678,"~/.zshrc"
 -'  9  0  ~/.zshrc
@@ -248,10 +290,46 @@ $
 |4,39,114,10,1692723675,"~/.zshrc"
 -'  114  10  ~/.zshrc
 |4,39,114,10,1692723675,"~/.zshrc"
+-'  114  10  ~/.zshrc
+|4,39,114,10,1692723675,"~/.zshrc"
+-'  114  10  ~/.zshrc
+|4,39,114,10,1692723675,"~/.zshrc"
+-'  114  10  ~/.zshrc
+|4,39,114,10,1692723675,"~/.zshrc"
+-'  114  10  ~/.zshrc
+|4,39,114,10,1692723675,"~/.zshrc"
+-'  114  10  ~/.zshrc
+|4,39,114,10,1692723675,"~/.zshrc"
+-'  114  10  ~/.zshrc
+|4,39,114,10,1692723675,"~/.zshrc"
 -'  127  0  ~/.zshrc
 |4,39,127,0,1692723653,"~/.zshrc"
 -'  127  0  ~/.zshrc
 |4,39,127,0,1692723653,"~/.zshrc"
+-'  127  0  ~/.zshrc
+|4,39,127,0,1692723653,"~/.zshrc"
+-'  127  0  ~/.zshrc
+|4,39,127,0,1692723653,"~/.zshrc"
+-'  127  0  ~/.zshrc
+|4,39,127,0,1692723653,"~/.zshrc"
+-'  127  0  ~/.zshrc
+|4,39,127,0,1692723653,"~/.zshrc"
+-'  127  0  ~/.zshrc
+|4,39,127,0,1692723653,"~/.zshrc"
+-'  127  0  ~/.zshrc
+|4,39,127,0,1692723653,"~/.zshrc"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723643,"~/.local/scripts/batterynotify"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723643,"~/.local/scripts/batterynotify"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723643,"~/.local/scripts/batterynotify"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723643,"~/.local/scripts/batterynotify"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723643,"~/.local/scripts/batterynotify"
+-'  28  19  ~/.local/scripts/batterynotify
+|4,39,28,19,1692723643,"~/.local/scripts/batterynotify"
 -'  28  19  ~/.local/scripts/batterynotify
 |4,39,28,19,1692723643,"~/.local/scripts/batterynotify"
 -'  28  19  ~/.local/scripts/batterynotify
@@ -262,6 +340,72 @@ $
 |4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
 -'  1  0  ~/.local/scripts/batterynotify
 |4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  1  0  ~/.local/scripts/batterynotify
+|4,39,1,0,1692723610,"~/.local/scripts/batterynotify"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
+-'  2  15  ~/monitor.sh
+|4,39,2,15,1692721161,"~/monitor.sh"
 -'  2  15  ~/monitor.sh
 |4,39,2,15,1692721161,"~/monitor.sh"
 -'  2  15  ~/monitor.sh
@@ -292,150 +436,42 @@ $
 |4,39,16,26,1692721139,"~/monitor.sh"
 -'  16  26  ~/monitor.sh
 |4,39,16,26,1692721139,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721139,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721116,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721116,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721116,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721116,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721116,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721116,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721116,"~/monitor.sh"
--'  16  26  ~/monitor.sh
-|4,39,16,26,1692721116,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  14  0  ~/monitor.sh
-|4,39,14,0,1692721096,"~/monitor.sh"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  1  0  ~/mo
-|4,39,1,0,1692721017,"~/mo"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
--'  16  67  ~/monitor.sh
-|4,39,16,67,1692721000,"~/monitor.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/alacritty/alacritty.yml
+	*	1692871569	0
+	"	5	0
+	^	8	14
+	.	9	0
+	+	51	23
+	+	45	11
+	+	62	45
+	+	62	42
+	+	62	0
+	+	42	31
+	+	62	43
+	+	62	72
+	+	62	2
+	+	62	0
+	+	62	11
+	+	62	0
+	+	61	1
+	+	51	22
+	+	54	12
+	+	59	0
+	+	60	0
+	+	61	0
+	+	59	0
+	+	61	0
+	+	1	0
+	+	9	0
+	+	8	13
+	+	9	0
+
+> ~/.config/nvim/init.lua
+	*	1692853593	0
+	"	1	0
 
 > ~/.local/scripts/batterynotify
 	*	1692723792	0
@@ -603,35 +639,6 @@ $
 	.	143	0
 	+	143	2
 	+	143	0
-
-> ~/.config/alacritty/alacritty.yml
-	*	1692525426	0
-	"	8	13
-	^	8	14
-	.	8	13
-	+	51	23
-	+	45	11
-	+	62	45
-	+	62	42
-	+	62	0
-	+	42	31
-	+	62	43
-	+	62	72
-	+	62	2
-	+	62	0
-	+	62	11
-	+	62	0
-	+	61	1
-	+	51	22
-	+	54	12
-	+	59	0
-	+	60	0
-	+	61	0
-	+	59	0
-	+	61	0
-	+	1	0
-	+	9	0
-	+	8	13
 
 > ~/.config/picom/picom.conf
 	*	1692525229	0
@@ -1850,7 +1857,3 @@ $
 > ~/.vim/autoload/plug.vim
 	*	1689181632	0
 	"	89	0
-
-> ~/.config/picom/picom
-	*	1689178436	0
-	"	1	0
