@@ -56,6 +56,7 @@ nohup /usr/bin/pipewire-pulse &
 nohup /usr/bin/pipewire-media-session &
 nohup picom -b &
 nohup /usr/bin/emacs --daemon &
+yay -Qqe | awk -F/ '{print $1}' > ~/.installed_packages.txt
 
 # remember to put all the stuffs before exec dwm , 
 exec dwm 

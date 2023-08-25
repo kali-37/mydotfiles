@@ -14,8 +14,9 @@
       "key": "/",
       "name": "comment",
       "type": "command",
-      "command": "vscode-neovim.send",
-      "args": "<C-/>"
+      // "command": "vscode-neovim.send",
+      "command":"editor.foldAllBlockComments",
+      //"args": "<C-/>"
     },
     {
       "key": "b",
@@ -600,7 +601,7 @@
   },
   "terminal.external.osxExec": "iTerm.app",
   "leetcode.workspaceFolder": "$HOME/Documents/C_programming/leetcode",
-  "leetcode.defaultLanguage": "javascript",
+  "leetcode.defaultLanguage": "C",
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.hint.commentDescription": false,
   "window.menuBarVisibility": "toggle",
@@ -611,6 +612,7 @@
   "python.insidersChannel": "daily",
   "terminal.integrated.shell.linux": "/bin/zsh",
   "terminal.external.linuxExec": "/usr/bin/alacritty",
+  "terminal.integrated.linux"
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
       "textMateRules": [
@@ -728,8 +730,15 @@
   "code-runner.saveFileBeforeRun": true,
   "workbench.editor.showTabs": false,
   "editor.minimap.enabled": false,
-  "window.zoomLevel": -1,
   "files.autoSave": "afterDelay",
   "vim.easymotion": true,
   "vim.useSystemClipboard": true,
+  "terminal.explorerKind": "external",
+  "debug.terminal.clearBeforeReusing": true,
+  "terminal.integrated.automationProfile.linux": {
+
+  },
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+
 }
