@@ -104,6 +104,9 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+source $ZSH/oh-my-zsh.sh
+
 alias ls='ls --color=auto'
 alias ls='lsd'
 alias l='ls -l'
@@ -111,14 +114,21 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 alias vim='nvim'
+
+# git types...
+eval "$(ssh-agent -s)" >/dev/null  2>&1
+ssh-add ~/.ssh/github_pub/rsa_github >/dev/null  2>&1
+
+
 # emacs client 
 alias emacs="emacsclient -c -a 'emacs'"
-
-if [[ "$TERM_PROGRAM" != "vscode" ]]; then 
-  bindkey -v
+set -o vi 
+if [[ "$TERM_PROGRAM" == "vscode" ]]; then 
+  bindkey -r '^['   # Unbind Ctrl+[
+  bindkey -r '^['^O # Unbind Esc
+  bindkey '^]' vi-cmd-mode 
 fi
 
-source $ZSH/oh-my-zsh.sh
 alias grep='grep --color=auto'
 export PATH="$HOME/.local/scripts:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
@@ -126,4 +136,3 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local:$PATH"
 export WORKON_HOME=$HOME/.local/share/virtualenvs
 export PIP_VIRTUALENV_BASE=$HOME/.local/share/virtualenvs
-
