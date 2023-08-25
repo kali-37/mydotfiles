@@ -1,0 +1,4 @@
+#/bin/env sh
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/github_pub/rsa_github

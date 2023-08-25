@@ -1,15 +1,3 @@
-ls kali_37/
-ls kali_37/
-cd home/
-ls
-cd kali_37/
-ls
-pwd
-sudo mv ./* /home/kali_37/
-ls
-cd ..
-ls
-cd ..
 ls
 pwd
 rm -rf home/ kali_37/
@@ -496,5 +484,17 @@ exit
 vim alacritty.yml 
 vi alacritty.yml 
 vi alacritty.yml
+clear
+exit
+ls
+./valid_parenthisis.c 
+./valid_parenthisis.c (){}
+./valid_parenthisis.c (){}
+echo $TERM_PROGRAM
+exit
+ls
+./valid_parenthisis.c 
+./valid_parenthisis.c  (){}
+./valid_parenthisis.c  '(){}'
 clear
 exit

@@ -1,4 +1,4 @@
-source : https://github.com/ChristianChiarulli/Machfiles/blob/master/dunst/.config/dunst/dunstrc
+# source : https://github.com/ChristianChiarulli/Machfiles/blob/master/dunst/.config/dunst/dunstrc
 
 
 [global]
@@ -69,7 +69,7 @@ source : https://github.com/ChristianChiarulli/Machfiles/blob/master/dunst/.conf
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 80
+    transparency = 40
 
     # The height of the entire notification.  If the height is smaller
     # than the font height and padding combined, it will be raised
@@ -207,7 +207,7 @@ source : https://github.com/ChristianChiarulli/Machfiles/blob/master/dunst/.conf
     max_icon_size = 72
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/Adwaita/16x16
 
     ### History ###
 
@@ -280,14 +280,14 @@ source : https://github.com/ChristianChiarulli/Machfiles/blob/master/dunst/.conf
     # discouraged.
     #
     # By enabling this setting dunst will not be able to detect when a monitor
-    # is connected or disconnected which might break follow mode if the screen
+    # is connected or disconnected which might break follow mode if the screen/usr/share/icons/Adwaita/16x16
     # layout changes.
     force_xinerama = false
 
     ### mouse
 
     # Defines list of actions for each mouse event
-    # Possible values are:
+    # Possible values are:/usr/share/icons/Adwaita/16x16
     # * none: Don't do anything.
     # * do_action: If the notification has exactly one action, or one is marked as default,
     #              invoke it. If there are multiple and no default, open the context menu.
@@ -357,7 +357,7 @@ source : https://github.com/ChristianChiarulli/Machfiles/blob/master/dunst/.conf
     background = "#900000"
     foreground = "#ffffff"
     frame_color = "#ff0000"
-    timeout = 5
+    timeout = 50
     # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon
 
@@ -429,9 +429,9 @@ source : https://github.com/ChristianChiarulli/Machfiles/blob/master/dunst/.conf
 #    msg_urgency = critical
 #    fullscreen = show
 
-#[espeak]
-#    summary = "*"
-#    script = dunst_espeak.sh
+[espeak]
+    summary = "*"
+    script = ~/.config/dunst/dunst_espeak.sh
 
 #[script-test]
 #    summary = "*script*"

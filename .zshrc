@@ -41,7 +41,7 @@ ZSH_THEME="amuse"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -78,7 +78,6 @@ plugins=(
 )
 
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -115,8 +114,11 @@ alias vim='nvim'
 # emacs client 
 alias emacs="emacsclient -c -a 'emacs'"
 
+if [[ "$TERM_PROGRAM" != "vscode" ]]; then 
+  bindkey -v
+fi
 
-bindkey -v
+source $ZSH/oh-my-zsh.sh
 alias grep='grep --color=auto'
 export PATH="$HOME/.local/scripts:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
