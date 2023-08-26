@@ -51,11 +51,9 @@ fi
 nohup xmodmap .Xkeymap & 
 nohup xbindkeys -f ~/.xbindkeysrc  && xbindkeys &
 nohup xrandr --output VGA-1 --left-of eDP-1  &
-#nohup /usr/bin/pipewire-pulse &
-#nohup /usr/bin/pipewire-media-session &
 nohup picom -b &
 nohup /usr/bin/emacs --daemon &
 yay -Qqe | awk -F/ '{print $1}' > ~/.installed_packages.txt
-
+nohup dunst &
 # remember to put all the stuffs before exec dwm , 
 exec dwm 
