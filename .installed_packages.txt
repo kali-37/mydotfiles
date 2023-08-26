@@ -92,6 +92,7 @@ vim
 vlc
 vulkan-intel
 vulkan-radeon
+vulkan-tools
 webcamoid
 webkit2gtk
 xbindkeys

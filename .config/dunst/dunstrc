@@ -322,15 +322,15 @@
 
     # Close notification. Equivalent dunstctl command:
     # dunstctl close
-    # close = ctrl+space
+    #close = ctrl+space
 
     # Close all notifications. Equivalent dunstctl command:
     # dunstctl close-all
-    # close_all = ctrl+shift+space
+    #close_all = ctrl+shift+space
 
     # Redisplay last message(s). Equivalent dunstctl command:
-    # dunstctl history-pop
-    # history = ctrl+grave
+    #dunstctl history-pop
+    #History = ctrl+grave
 
     # Context menu. Equivalent dunstctl command:
     # dunstctl context
@@ -431,7 +431,7 @@
 
 [espeak]
     summary = "*"
-    script = ~/.config/dunst/dunst_espeak.sh
+    script = ~/.config/dunst/dunst_espeak.sh $summary
 
 #[script-test]
 #    summary = "*script*"

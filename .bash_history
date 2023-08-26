@@ -1,278 +1,3 @@
-ls
-pwd
-rm -rf home/ kali_37/
-ls
-ls -la
-ls .config
-ls
-cd 
-ls
-clear
-ls
-cd 
-ls
-cd yay
-ls
-cd ..
-ls
-rm -rf yay
-ls
-clear
-ls
-cd home
-ls
-cd kali_37/
-ls
-cd ..
-ls
-cd ..
-ls
-clear
-ls
-rm -rf home
-cd home
-ls
-ls -la
-cd kali_37/
-ls -la
-cd .config
-ls
-cd 
-ls
-cd .config
-ls
-cd 
-ls
-cd .config
-ls
-cd yay
-ls
-cd ..
-ls
-clear
-ls
-cd 
-ls
-cd .config
-ls
-cd 
-ls
-cd 
-ls
-clear
-ls
-cd 
-ls
-pwd
-ls /mnt/HDD
-clear
-ls
-cd 
-ls
-pwd
-rm -rf /home/kali_37/*
-sudo rm -rf /home/kali_37/*
-ls
-cd 
-ls
-pwd
-clear
-ls
-pwd
-ls
-ls
-ls /mnt/HDD
-cd 
-ls
-sudo tar xzvf /mnt/HDD/kali_37_16_second.tar.gz  
-ls
-cd home
-ls
-cd kali_37/
-ls
-ls .config
-clear
-ls
-pwd
-sudo mv ./* /home/kali_37/
-pwd
-ls
-cd 
-ls
-cd .config
-ls
-cd 
-ls
-cd .config
-ls
-ls -la
-cd 
-ls
-cd home/
-ls
-cd kali_37/
-ls
-ls -la
-ls .config
-clear
-ls
-ls
-ls
-pwd
-mv ./*. /home/kali_37/
-mv .* /home/kali_37/
-sudo mv .* /home/kali_37/
-rm -rf /home/kali_37/.config
-rm -rf /home/kali_37/.cache
-sudo mv .* /home/kali_37/
-cd 
-ls
-cd .config
-ls
-cd 
-ls
-clear
-ls
-cd home/
-ls
-ls -la
-cd kali_37/
-ls -la
-cd ..
-ls
-cd 
-ls
-rm -rf home/
-sudo rm -rf home/
-ls
-clear
-ls
-cat .xinitrc
-cd 
-ls
-cat .zshrc
-clear
-startx
-cat .xinitrc
-yay -S xterm
-startx
-clear
-ls
-mkdir puranoxinirtc
-cd puranoxinirtc/
-ls
-sudo mount /dev/sda1 /mnt/HDD
-ls /mnt/HDD
-lsblk
-sudo umount /mnt/HDD
-lsblk
-sudo mount /dev/sdb1 /mnt/HDD
-ls /mnt/HDD
-sudo -xzf /mnt/HDD/kali_37_16_second.tar.gz --wildcard '*.xinirtc'
-sudo tar  -xzf /mnt/HDD/kali_37_16_second.tar.gz --wildcard '*.xinirtc'
-sudo tar  -xzf /mnt/HDD/kali_37_16_second.tar.gz --wildcards '*.xinirtc'
-ls
-ls
-sudo tar  -xzf /mnt/HDD/kali_37_16_second.tar.gz --wildcards '*.x'
-ls
-cd ..
-pwd
-cd puranoxinirtc/
-sudo tar  -xzf /mnt/HDD/kali_37_16_second.tar.gz --wildcards '*.xinitrc'
-ls
-cat home/
-ls
-cd home/
-ls
-cd 
-ls
-cd puranoxinirtc/
-ls
-ls
-cd home
-ls
-cd kali_37/
-ls
-pwd
-ls
-ls -la
-mv .* ../../
-sudo mv .* ../../
-ls
-ls -la
-cd ..
-cd ..
-ls
-ls -la
-clera
-ls
-clear
-ls
-rm -rf home/
-sudo rm -rf home/
-clear
-ls
-ls -la
-cat .xinitrc 
-cd ..
-ls
-vim .xinitrc
-yay -S vim
-clear
-ls
-cat .xinitrc
-mv .xinitrc .xinitrc.back_new_walla_arch
-cd puranoxinirtc/
-ls
-mv .xinitrc ../
-ls
-cd 
-ls
-ls .xinitrc
-clear
-ls
-cat userinstalled.txt 
-clear
-cat userinstalled.txt 
-clear
-yay -S --needed < userinstalled.txt 
-sudo pacman -S --needed < userinstalled.txt 
-yay -S --needed - < userinstalled.txt 
-brave
-clear
-yay -S brave
-yay brave
-clear
-sudo reboot
-startx
-cd .config
-ls
-cd dwm
-ls
-sudo make install
-cd dmenu-5.2/
-sudo make install
-cd 
-cat .xinitrc
-ls
-cd pre
-cd .xinitrc
-ls
-cle4ar
-ls
-clear
-ls
-cd puranoxinirtc/
-ls
-ls -la
-sudo tar  -xzf /mnt/HDD/kali_37_16_second.tar.gz --wildcards '*.xinitrc'
-sudo mount /dev/sdb1 /mnt/HDD
-ls /mnt/HDD/
-sudo tar  -xzf /mnt/HDD/kali_37_16_second.tar.gz --wildcards '*.xinitrc'
-ls
-cd home/kali_37/
-mv .xinitrc ../../
-sudo mv .xinitrc ../../
 cd ../../
 ls
 pwd
@@ -496,5 +221,280 @@ ls
 ./valid_parenthisis.c 
 ./valid_parenthisis.c  (){}
 ./valid_parenthisis.c  '(){}'
+clear
+exit
+dunstctl history | jq '.data[0][0].body.data, .data[0][0].message.data'
+dunstctl history | jq '.data[0][0].body.data, .data[0][0].message.data'
+dunstctl history
+exit
+summ =''' "type" : "aa{sv}",
+	"data" : [
+		[
+			{
+				"body" : {
+					"type" : "s",
+					"data" : " \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>BingX: New User Exclusive</b>\n \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "BingX: New User Exclusive"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Brave"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : "/tmp/.org.chromium.Chromium.rKthhV"
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 2
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 134642979522
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 0
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			}
+		]
+	]
+}
+
+'''
+summ =''' "type" : "aa{sv}",
+	"data" : [
+		[
+			{
+				"body" : {
+					"type" : "s",
+					"data" : " \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>BingX: New User Exclusive</b>\n \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "BingX: New User Exclusive"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Brave"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : "/tmp/.org.chromium.Chromium.rKthhV"
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 2
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 134642979522
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 0
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			}
+		]
+	]
+}
+
+'''
+summ= '''
+ "type" : "aa{sv}",
+	"data" : [
+		[
+			{
+				"body" : {
+					"type" : "s",
+					"data" : " \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>BingX: New User Exclusive</b>\n \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "BingX: New User Exclusive"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Brave"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : "/tmp/.org.chromium.Chromium.rKthhV"
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 2
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 134642979522
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 0
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			}
+		]
+	]
+}
+
+
+summ =''' "type" : "aa{sv}",
+	"data" : [
+		[
+			{
+				"body" : {
+					"type" : "s",
+					"data" : " \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>BingX: New User Exclusive</b>\n \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "BingX: New User Exclusive"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Brave"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : "/tmp/.org.chromium.Chromium.rKthhV"
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 2
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 134642979522
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 0
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			}
+		]
+	]
+}
+
+''''''
+summ =''' "type" : "aa{sv}",
+	"data" : [
+		[
+			{
+				"body" : {
+					"type" : "s",
+					"data" : " \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>BingX: New User Exclusive</b>\n \n\nGrab $5155 Welcome Gifts in Rewards!"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "BingX: New User Exclusive"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Brave"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : "/tmp/.org.chromium.Chromium.rKthhV"
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 2
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 134642979522
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 0
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			}
+		]
+	]
+'''
 clear
 exit
