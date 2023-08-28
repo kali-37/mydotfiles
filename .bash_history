@@ -1,7 +1,3 @@
-cd ../../
-ls
-pwd
-ls
 ls -la
 rm -rf home
 sudo rm -rf home
@@ -497,4 +493,8 @@ summ =''' "type" : "aa{sv}",
 	]
 '''
 clear
+exit
+function ga {   if [ "$1" = "dotfiles" ]; then     while IFS= read -r file; do       git add "$file";     done < .gitput;   else     git add "$@";   fi; }
+ga dotfiles
+git status
 exit

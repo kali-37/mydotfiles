@@ -107,6 +107,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+
+
+
 alias ls='ls --color=auto'
 alias ls='lsd'
 alias l='ls -l'
@@ -114,7 +117,9 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 alias vim='nvim'
-
+alias gc='git commit'
+alias ga='git add'
+alias gs='git status'
 # git types...
 eval "$(ssh-agent -s)" >/dev/null  2>&1
 ssh-add ~/.ssh/github_pub/rsa_github >/dev/null  2>&1

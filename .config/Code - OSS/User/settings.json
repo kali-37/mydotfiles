@@ -612,7 +612,6 @@
   "python.insidersChannel": "daily",
   "terminal.integrated.shell.linux": "/bin/zsh",
   "terminal.external.linuxExec": "/usr/bin/alacritty",
-  "terminal.integrated.linux"
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
       "textMateRules": [
@@ -719,7 +718,7 @@
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Default Dark+",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
@@ -740,5 +739,15 @@
   },
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.drawBoldTextInBrightColors": false,
+  "vsix.sources": {
+    "opn": {
+        "type": "marketplace",
+        "serviceUrl": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
+    },
+  },
+  "vsix.crons": {
+    "update": "0 12 * * *"      // at 12PM, every day
+  },
+  "git.enableSmartCommit": true
 
-}
+  }
