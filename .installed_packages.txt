@@ -2,6 +2,8 @@ acpi
 alacritty
 base
 base-devel
+bluez
+bluez-utils
 brave-bin
 brightnessctl
 caprine
@@ -18,7 +20,6 @@ emacs
 espeak
 evince
 feh
-flutter
 git
 github-copilot-cli
 glfw-x11
@@ -50,7 +51,6 @@ minizip
 neovim
 networkmanager
 ninja
-note
 ntfs-3g
 openssh
 paccache-hook
