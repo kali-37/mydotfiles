@@ -551,12 +551,12 @@ cleanupmon(Monitor *mon)
 {
 	Monitor *m;
 
-	//if (mon == mons)
+	if (mon == mons)
 	mons = mons->next;
-	//else {
+	else {
 		for (m = mons; m && m->next != mon; m = m->next);
 		m->next = mon->next;
-	//}
+	}
 	XUnmapWindow(dpy, mon->barwin);
 	XDestroyWindow(dpy, mon->barwin);
 	free(mon);
