@@ -551,12 +551,12 @@ cleanupmon(Monitor *mon)
 {
 	Monitor *m;
 
-	if (mon == mons)
-		mons = mons->next;
-	else {
+	//if (mon == mons)
+	mons = mons->next;
+	//else {
 		for (m = mons; m && m->next != mon; m = m->next);
 		m->next = mon->next;
-	}
+	//}
 	XUnmapWindow(dpy, mon->barwin);
 	XDestroyWindow(dpy, mon->barwin);
 	free(mon);
@@ -939,8 +939,8 @@ focusmon(const Arg *arg)
 {
 	Monitor *m;
 
-	if (!mons->next)
-		return;
+//#	if (!mons->next)
+//#		return;
 	if ((m = dirtomon(arg->i)) == selmon)
 		return;
 	unfocus(selmon->sel, 0);
