@@ -1,5 +1,3 @@
-ls -la
-rm -rf home
 sudo rm -rf home
 ls
 clear
@@ -497,4 +495,6 @@ exit
 function ga {   if [ "$1" = "dotfiles" ]; then     while IFS= read -r file; do       git add "$file";     done < .gitput;   else     git add "$@";   fi; }
 ga dotfiles
 git status
+exit
+if [ $(lsblk --output SIZE -n /dev/sdb | sed 's/G//') -gt 400 ]; then     mount /dev/sdb1 /mnt/HDD/Linux; fi
 exit

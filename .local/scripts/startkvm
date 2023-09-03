@@ -1,0 +1,15 @@
+#!/bin/sh
+
+
+sudo systemctl start libvirtd.service
+sleep  0.3
+sudo systemctl start dnsmasq.service
+sleep 0.1
+sudo virsh net-start default
+sleep  0.1
+sudo systemctl restart libvirtd.service
+sleep 0.1
+virt-manager
+exit
+exit
+
