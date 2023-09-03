@@ -718,7 +718,7 @@
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Default Dark+",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
