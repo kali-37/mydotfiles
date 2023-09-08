@@ -13,6 +13,10 @@
     "command":"editor.action.clipboardCopyAction"
   },
   {
+    "key":"ctrl+A",
+    "command":"editor.action.selectAll"
+  },
+  {
     "key":"ctrl+shift+v",
     "command":"editor.action.clipboardPasteAction"
   },
