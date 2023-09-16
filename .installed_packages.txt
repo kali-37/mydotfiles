@@ -11,6 +11,7 @@ brave-bin
 bridge-utils
 brightnessctl
 caprine
+clamav
 clang
 cmake
 code
@@ -26,6 +27,7 @@ espeak
 etcher-bin
 evince
 feh
+ghdl-gcc-git
 git
 github-copilot-cli
 glfw-x11
@@ -48,6 +50,7 @@ libxft
 libxinerama
 linux
 linux-firmware
+logisim-evolution
 lsd
 lsof
 maim
