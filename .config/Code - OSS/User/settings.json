@@ -719,10 +719,12 @@
   "workbench.colorTheme": "Default Dark+",
   "github.copilot.enable": {
     "*": true,
-    "plaintext": false,
-    "markdown": false,
+    "plaintext": true,
+    "markdown": true,
     "scminput": false,
-    "c": false
+    "c": true,
+    "vhdl": true,
+    "python": false
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "code-runner.runInTerminal": true,
@@ -748,6 +750,7 @@
   "vsix.crons": {
     "update": "0 12 * * *"      // at 12PM, every day
   },
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": 1
 
   }

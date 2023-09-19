@@ -163,7 +163,7 @@
     "command": "-workbench.action.togglePanel"
   },
   {
-    "key": "shift+k",
+    "key": "ctrl+k",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
