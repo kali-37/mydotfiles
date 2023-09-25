@@ -58,6 +58,7 @@ man-db
 mesa-utils
 microsoft-edge-stable-bin
 minizip
+neofetch
 neovim
 networkmanager
 ninja
