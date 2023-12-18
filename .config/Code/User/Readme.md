@@ -46,3 +46,18 @@ Added
 		
 		Now install .vsix file navigating it using Ctrl+shift+P ,
 		command :  **Install From VSIX**   then select the .vsix file.
+
+** Upper thing all applies to vscode-oss and codium but for vscode it dosen't 
+
+## Extensions compulasory are: 
+* which-key 
+* neovim 
+
+-- Additionals :
+    C/C++ Clangd 
+    Live Server 
+    Path Intellisense 
+    Prettier-Code 
+    pylance -> uses pyright and recommended for vscode with optimization
+    pyhton Intellisense-> with lsp as Pylance 
+    Github -copilot 
