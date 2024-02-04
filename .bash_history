@@ -1,35 +1,3 @@
-sudo rm -rf home
-ls
-clear
-ls
-ls
-ls -la
-cd ..
-ls
-pwd
-mv .xinitrc .xinitrc.back_new_walla_arch 
-ls
-clear
-ls
-cat .xinitrc.back
-clear
-ls
-mv .xinitrc.back .xinitrc.back
-mv .xinitrc.back .xinitrc
-ls
-clear
-cat .xinitrc
-clear
-dwm
-yay -S libXincrema.so
-yay libxincrema
-cat .xinitrc
-clear
-cd 
-cd .config
-ls
-cd dwm/
-ls
 sudo make clean install
 yay -S libxinerama libx11
 clear
@@ -497,4 +465,36 @@ ga dotfiles
 git status
 exit
 if [ $(lsblk --output SIZE -n /dev/sdb | sed 's/G//') -gt 400 ]; then     mount /dev/sdb1 /mnt/HDD/Linux; fi
+exit
+shopt -s extglob
+echo !(*.jpg)
+exit
+echo  "\x1b[31mawdawd\x1b[32mthis is green\x1b[34mthis is\n blue"
+echo  -e "\x1b[31mawdawd\x1b[32mthis is green\x1b[34mthis is\n blue"
+echo  "\x1b[31mawdawd\x1b[32mthis is green\x1b[34mthis is\n blue"
+clear
+ls
+clear
+ls
+ls
+clear
+ls
+whomai
+clear
+cd ..
+ls
+exit
+ls
+ls -la
+clear
+ls
+clear
+ls
+whoami
+clear
+whoami 
+vim .bashrc
+source .bashrc
+ls
+clear
 exit

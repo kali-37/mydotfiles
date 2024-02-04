@@ -1,15 +1,73 @@
+COLOR_DEF=$'\e[0m'
+COLOR_USR=$'\e[32m'
+COLOR_DIR=$'\e[38;5;197m'
+COLOR_GIT=$'\e[38;5;39m'
+setopt PROMPT_SUBST
+
+# Function to parse Git branch
+parse_git_branch() {
+    ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+    echo "(${ref#refs/heads/})"
+}
+
+# Set the prompt
+export PROMPT='%{${COLOR_USR}%}%n %{${COLOR_DIR}%}%~ %{${COLOR_GIT}%}$(parse_git_branch)%{${COLOR_DEF}%}$ '
+
+
+
+
+
+# auto completions zshrc
+autoload -U compinit && compinit
+
+alias ls='ls --color=auto'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias vim='nvim'
+alias gc='git commit'
+alias ga='git add'
+alias gs='git status'
+# git types...
+eval "$(ssh-agent -s)" >/dev/null  2>&1
+ssh-add ~/.ssh/github_pub/rsa_github >/dev/null  2>&1
+
+
+# emacs client 
+alias emacs="emacsclient -c -a 'emacs'"
+set -o vi 
+if [[ "$TERM_PROGRAM" == "vscode" ]]; then 
+  bindkey -r '^['   # Unbind Ctrl+[
+  bindkey -r '^['^O # Unbind Esc
+  bindkey '^]' vi-cmd-mode 
+fi
+
+alias grep='grep --color=auto'
+export PATH="$HOME/.local/scripts:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local:$PATH"
+export WORKON_HOME=$HOME/.local/share/virtualenvs
+export PIP_VIRTUALENV_BASE=$HOME/.local/share/virtualenvs
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+
+
+
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+
+#----------------------------------------------------
+#export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="amuse"
+#----------------------------------------------------
+#ZSH_THEME="amuse"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -42,7 +100,8 @@ ZSH_THEME="amuse"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#----------------------------------------------------
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -71,13 +130,14 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
-	virtualenv        
-)
-
+#'
+#plugins=(
+#	git
+#	zsh-autosuggestions
+#	zsh-syntax-highlighting
+#	virtualenv        
+#)
+#'
 
 
 # User configuration
@@ -105,40 +165,7 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-source $ZSH/oh-my-zsh.sh
-
-
+#----------------------------------------------------------------
+#source $ZSH/oh-my-zsh.sh
 
 
-alias ls='ls --color=auto'
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
-alias vim='nvim'
-alias gc='git commit'
-alias ga='git add'
-alias gs='git status'
-# git types...
-eval "$(ssh-agent -s)" >/dev/null  2>&1
-ssh-add ~/.ssh/github_pub/rsa_github >/dev/null  2>&1
-
-
-# emacs client 
-alias emacs="emacsclient -c -a 'emacs'"
-set -o vi 
-if [[ "$TERM_PROGRAM" == "vscode" ]]; then 
-  bindkey -r '^['   # Unbind Ctrl+[
-  bindkey -r '^['^O # Unbind Esc
-  bindkey '^]' vi-cmd-mode 
-fi
-
-alias grep='grep --color=auto'
-export PATH="$HOME/.local/scripts:$PATH"
-export PATH="$HOME/.config/emacs/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.local:$PATH"
-export WORKON_HOME=$HOME/.local/share/virtualenvs
-export PIP_VIRTUALENV_BASE=$HOME/.local/share/virtualenvs

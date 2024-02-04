@@ -716,14 +716,14 @@
   "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/vscode.vim",
   "editor.lineNumbers": "relative",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": true,
     "markdown": true,
     "scminput": false,
-    "c": true,
+    "c": false,
     "vhdl": true,
     "python": false,
-    "javascript": true,
+    "javascript": false,
     "html": false
   },
   "code-runner.runInTerminal": true,
@@ -774,7 +774,6 @@
 
 
   ],
-  "window.zoomLevel": 1,
   "python.missingPackage.severity": "Error",
   "python.envFile": "${workspaceFolder}/.venv",
   "python.languageServer": "Pylance",
@@ -796,5 +795,9 @@
   
   ],
   "python.analysis.completeFunctionParens": true,
-  "python.analysis.typeCheckingMode": "basic"
+  "python.analysis.typeCheckingMode": "basic",
+  "eslint.format.enable": true,
+  "eslint.quiet": true,
+  "workbench.startupEditor": "none",
+  "liveServer.settings.donotShowInfoMsg": true
   }
