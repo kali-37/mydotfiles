@@ -581,12 +581,11 @@
   "gitlens.hovers.currentLine.over": "line",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.pythonPath": "/home/kali_37/.miniconda/bin/python",
+  "python.pythonPath": "/home/kali_37/.local/share/virtualenvs",
   "java.semanticHighlighting.enabled": true,
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/kali_37/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
   "workbench.list.automaticKeyboardNavigation": false,
   "oneDarkPro.editorTheme": "onedarkPro",
-  "python.languageServer": "Microsoft",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "kite.showWelcomeNotificationOnStartup": false,
@@ -716,30 +715,25 @@
   },
   "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/vscode.vim",
   "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "Default Dark+",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": true,
     "markdown": true,
     "scminput": false,
     "c": true,
     "vhdl": true,
     "python": false,
-    "javascript": true
+    "javascript": true,
+    "html": false
   },
-  "diffEditor.ignoreTrimWhitespace": false,
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "editor.minimap.enabled": false,
-  "files.autoSave": "afterDelay",
   "vim.easymotion": true,
   "vim.useSystemClipboard": true,
   "terminal.explorerKind": "external",
   "debug.terminal.clearBeforeReusing": true,
-  "terminal.integrated.automationProfile.linux": {
-
-  },
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "vsix.sources": {
@@ -752,7 +746,51 @@
     "update": "0 12 * * *"      // at 12PM, every day
   },
   "git.enableSmartCommit": true,
-  "window.zoomLevel": 1,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[python]": {
+  
+  
 
+    
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "never",
+  "files.associations": {
+    "*.py": "python"
+  },
+  "[bat]": {
+  
+  },
+  "python.autoComplete.extraPaths": [
+
+
+
+
+  ],
+  "window.zoomLevel": 1,
+  "python.missingPackage.severity": "Error",
+  "python.envFile": "${workspaceFolder}/.venv",
+  "python.languageServer": "Pylance",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.venvFolders": [
+    ".venv",
+    ".env"
+  ],
+  "python.terminal.executeInFileDir": true,
+  "python.analysis.extraPaths": [],
+  "python.analysis.diagnosticSeverityOverrides": {
+
+
+  },
+  "python.analysis.addImport.exactMatchOnly": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.fixAll": [
+  
+  ]
   }
