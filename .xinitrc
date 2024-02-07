@@ -51,8 +51,8 @@ fi
 nohup xmodmap .Xkeymap & 
 nohup xbindkeys -f ~/.xbindkeysrc  && xbindkeys &
 nohup xrandr --output VGA-1 --left-of eDP-1  &
-nohup picom -b &
-nohup /usr/bin/emacs --daemon &
+#nohup picom -b &
+#nohup /usr/bin/emacs --daemon &
 yay -Qqe | awk -F/ '{print $1}' > ~/.installed_packages.txt
-nohup dunst &
+#nohup dunst &
 exec dwm

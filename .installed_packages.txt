@@ -59,7 +59,6 @@ libxinerama
 linux
 linux-firmware
 linux-headers
-lsd
 lsof
 maim
 man-db
@@ -82,7 +81,6 @@ paccache-hook
 packettracer
 pamixer
 perl-file-mimeinfo
-picom
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -98,6 +96,7 @@ python-requests
 python-wxpython
 qbittorrent
 qemu-base
+rabbitmq
 ranger
 rsync
 scrot
@@ -169,6 +168,6 @@ zimg
 zoom
 zram-generator
 zsh-autosuggestions
-zsh-theme-powerlevel9k-git
+zsh-completions
 zvbi
 zxing-cpp
