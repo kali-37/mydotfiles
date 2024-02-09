@@ -1,0 +1,12 @@
+[Unit]
+Description=Bind /home/usr to /usr
+
+[Mount]
+What=/home/usr
+Where=usr
+Type=none
+Options=bind
+
+[Install]
+WantedBy=multi-user.target
+

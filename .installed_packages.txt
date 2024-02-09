@@ -44,6 +44,7 @@ htop
 insomnia
 intel-media-driver
 intel-ucode
+jq
 kdeconnect
 lib32-mesa
 lib32-vulkan-radeon

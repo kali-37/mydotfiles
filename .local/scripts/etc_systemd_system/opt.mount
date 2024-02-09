@@ -1,0 +1,12 @@
+[Unit]
+Description=Bind /home/opt to /opt
+
+[Mount]
+What=/home/opt
+Where=opt
+Type=none
+Options=bind
+
+[Install]
+WantedBy=multi-user.target
+

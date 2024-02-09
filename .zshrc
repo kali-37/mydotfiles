@@ -14,11 +14,26 @@ parse_git_branch() {
 export PROMPT='%{${COLOR_USR}%}%n %{${COLOR_DIR}%}%~ %{${COLOR_GIT}%}$(parse_git_branch)%{${COLOR_DEF}%}$ '
 
 
+#Set history size 
+HISTSIZE=5000  # max size
+SAVEHIST=5000  # max save
+HISTFILE=$HOME/.zsh_history
+# Append to the history file, don't overwrite it
+setopt APPEND_HISTORY
+# Save each command right after it has been executed
+setopt INC_APPEND_HISTORY
+# Share history across terminals
+setopt SHARE_HISTORY
+# Ignore duplicate entries in history
+setopt HIST_IGNORE_DUPS
+
 
 
 
 # auto completions zshrc
 autoload -U compinit && compinit
+
+
 
 alias ls='ls --color=auto'
 alias l='ls -l'
