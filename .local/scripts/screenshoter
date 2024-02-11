@@ -1,9 +1,12 @@
 #!/bin/env sh
 
-save_dir="$HOME/Picture/screenshots"
-mkdir -p "$save_dir"
+if [ "$1" = "1" ]; then 
+  save_dir="$HOME/screenshots"
+  mkdir -p "$save_dir"
 
-file_name="$(date +'%Y-%m-%d_%H-%M-%S').png"
+  file_name="$(date +'%Y-%m-%d_%H-%M-%S').png"
 
-maim -s "$save_dir/$file_name"
-
+  maim -s "$save_dir/$file_name"
+else
+  maim -s | xclip -selection clipboard -target image/png
+fi

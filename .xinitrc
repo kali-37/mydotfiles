@@ -1,6 +1,8 @@
 #!/bin/sh
 
+
 '
+# will execute this by xinit . 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
@@ -51,9 +53,9 @@ echo ".xinitrc     --- vitra \n" >> ~/execution_order.log
 #mounter & # mount hdd ext4 wala that is in sdb1 ..
 nohup xmodmap .Xkeymap & 
 nohup xbindkeys -f ~/.xbindkeysrc  && xbindkeys &
-nohup xrandr --output VGA-1 --left-of eDP-1  &
 #nohup picom -b &
 #nohup /usr/bin/emacs --daemon &
-yay -Qqe | awk -F/ '{print $1}' > ~/.installed_packages.txt
+yay -Qq | awk -F/ '{print $1}' > ~/.installed_packages.txt
 #nohup dunst &
+nohup sleep 2.3 && mine_monitor &
 exec dwm

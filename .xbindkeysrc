@@ -84,9 +84,14 @@
 "brave &"
   control+mod1+b
 
+"screenshoter 1 &"
+  control+Print+s
+
 "screenshoter &"
   Print
 
+"mine_monitor"
+  control+mod1+m
 
 
 ##################################

@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/window
+~MSle0~/eval
 
 # Last Substitute Search Pattern:
 ~MSle0&decrease
@@ -20,16 +20,16 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1707025323,,"wq"
 :q!
-|2,0,1704889509,,"q!"
+|2,0,1707578189,,"q!"
+:w
+|2,0,1707578187,,"w"
+:q
+|2,0,1707578184,,"q"
+:wq
+|2,0,1707578181,,"wq"
 :exit
 |2,0,1703251260,,"exit"
-:q
-|2,0,1692871570,,"q"
-:w
-|2,0,1692671636,,"w"
 :W
 |2,0,1692525383,,"W"
 :split test.py
@@ -68,6 +68,8 @@ $
 |2,0,1689094532,,"q~"
 
 # Search String History (newest to oldest):
+?/eval
+|2,1,1707570982,47,"eval"
 ? @$
 |2,1,1692525415,,"@$"
 ?/window
@@ -166,8 +168,6 @@ $
 |2,1,1689164074,47,"active-opacity"
 ?/opacity
 |2,1,1689164010,47,"opacity"
-?/inactive-opacity
-|2,1,1689163941,47,"inactive-opacity"
 
 # Expression History (newest to oldest):
 
@@ -176,76 +176,194 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	BLOCK	23
-	    y: 10
-	  class:
-	    instance: Alacritty
-|3,0,0,2,3,23,1692871558,"    y: 10","  class:","    instance: Alacritty"
+""0	LINE	0
+	# start some nice programs
+	xclock -geometry 50x50-1+1 &
+	xterm -geometry 80x50+494+51 &
+	xterm -geometry 80x20+494-0 &
+	exec xterm -geometry 80x66+0+0 -name login 
+	#####
+|3,1,0,1,6,0,1707578178,"# start some nice programs","xclock -geometry 50x50-1+1 &","xterm -geometry 80x50+494+51 &","xterm -geometry 80x20+494-0 &","exec xterm -geometry 80x66+0+0 -name login ","#####"
 "1	LINE	0
-	      xrandr --output eDP1 --pos 0x0
-|3,0,1,1,1,0,1692721085,"      xrandr --output eDP1 --pos 0x0"
+	do [ -x "$f" ] && . "$f" done unset f fi twm&
+|3,0,1,1,1,0,1707578141,"do [ -x \"$f\" ] && . \"$f\" done unset f fi twm&"
 "2	LINE	0
-	    xrandr --output VGA- --pos 1920x312
-|3,0,2,1,1,0,1692721072,"    xrandr --output VGA- --pos 1920x312"
+	for f in /etc/X11/xinit/xinitrc.d/?*.sh ;
+|3,0,2,1,1,0,1707578141,"for f in /etc/X11/xinit/xinitrc.d/?*.sh ;"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1692706599,""
+	if [ -d /etc/X11/xinit/xinitrc.d ] ; then 
+|3,0,3,1,1,0,1707578140,"if [ -d /etc/X11/xinit/xinitrc.d ] ; then "
 "4	LINE	0
-	}
-|3,0,4,1,1,0,1692706598,"}"
+	kdd
+|3,0,4,1,1,0,1707578108,"kdd"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1692706599,""
+	exec dwm
+|3,0,5,1,1,0,1707577924,"exec dwm"
 "6	LINE	0
-	}
-|3,0,6,1,1,0,1692706598,"}"
+	#nohup dunst &
+|3,0,6,1,1,0,1707577923,"#nohup dunst &"
 "7	LINE	0
-	.vscode-oss/argv.json
-|3,0,7,1,1,0,1692706593,".vscode-oss/argv.json"
+	yay -Qqe | awk -F/ '{print $1}' > ~/.installed_packages.txt
+|3,0,7,1,1,0,1707577923,"yay -Qqe | awk -F/ '{print $1}' > ~/.installed_packages.txt"
 "8	LINE	0
-	.vscode-oss/argv.json
-|3,0,8,1,1,0,1692693715,".vscode-oss/argv.json"
+	#nohup /usr/bin/emacs --daemon &
+|3,0,8,1,1,0,1707577922,"#nohup /usr/bin/emacs --daemon &"
 "9	LINE	0
-	.config/ranger
-|3,0,9,1,1,0,1692693711,".config/ranger"
+	#nohup picom -b &
+|3,0,9,1,1,0,1707577922,"#nohup picom -b &"
+"f	CHAR	0
+	kjjkkkkjjj:qj
+|3,0,15,0,1,0,1707578165,"kjjkkkkjjj:qj"
 "q	CHAR	0
 	:w€kbq
 |3,0,26,0,1,0,1689513877,":w€kbq"
 "-	CHAR	0
-	"
-|3,0,36,0,1,0,1692723672,"\""
+	 
+|3,0,36,0,1,0,1707578126," "
 
 # File marks:
-'0  10  0  ~/.bashrc
-|4,48,10,0,1707025323,"~/.bashrc"
-'1  10  22  ~/.config/discord/settings.json
-|4,49,10,22,1704889560,"~/.config/discord/settings.json"
-'2  2  0  ~/.config/discord/settings.json
-|4,50,2,0,1704889509,"~/.config/discord/settings.json"
-'3  2  0  ~/.config/discord/settings.json
-|4,51,2,0,1704889509,"~/.config/discord/settings.json"
-'4  1  4  /tmp/tutorz7ZLDI
-|4,52,1,4,1703251260,"/tmp/tutorz7ZLDI"
-'5  5  0  ~/.config/alacritty/alacritty.yml
-|4,53,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
-'6  1  0  ~/.config/nvim/init.lua
-|4,54,1,0,1692853594,"~/.config/nvim/init.lua"
-'7  28  19  ~/.local/scripts/batterynotify
-|4,55,28,19,1692723802,"~/.local/scripts/batterynotify"
-'8  117  0  ~/.zshrc
-|4,56,117,0,1692723689,"~/.zshrc"
-'9  28  19  ~/.local/scripts/batterynotify
-|4,57,28,19,1692723643,"~/.local/scripts/batterynotify"
+'0  43  0  /etc/X11/xinit/xinitrc
+|4,48,43,0,1707578189,"/etc/X11/xinit/xinitrc"
+'1  48  0  ~/.zshrc
+|4,49,48,0,1707570990,"~/.zshrc"
+'2  49  0  ~/.zshrc
+|4,50,49,0,1707570472,"~/.zshrc"
+'3  49  0  ~/.zshrc
+|4,51,49,0,1707570472,"~/.zshrc"
+'4  10  0  ~/.bashrc
+|4,52,10,0,1707025323,"~/.bashrc"
+'5  10  22  ~/.config/discord/settings.json
+|4,53,10,22,1704889560,"~/.config/discord/settings.json"
+'6  2  0  ~/.config/discord/settings.json
+|4,54,2,0,1704889509,"~/.config/discord/settings.json"
+'7  2  0  ~/.config/discord/settings.json
+|4,55,2,0,1704889509,"~/.config/discord/settings.json"
+'8  1  4  /tmp/tutorz7ZLDI
+|4,56,1,4,1703251260,"/tmp/tutorz7ZLDI"
+'9  5  0  ~/.config/alacritty/alacritty.yml
+|4,57,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
 
 # Jumplist (newest first):
+-'  43  0  /etc/X11/xinit/xinitrc
+|4,39,43,0,1707578189,"/etc/X11/xinit/xinitrc"
+-'  1  0  /etc/X11/xinit/xinitrc
+|4,39,1,0,1707577910,"/etc/X11/xinit/xinitrc"
+-'  48  0  ~/.zshrc
+|4,39,48,0,1707570990,"~/.zshrc"
+-'  48  0  ~/.zshrc
+|4,39,48,0,1707570990,"~/.zshrc"
+-'  23  0  ~/.zshrc
+|4,39,23,0,1707570982,"~/.zshrc"
+-'  23  0  ~/.zshrc
+|4,39,23,0,1707570982,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1707570977,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1707570977,"~/.zshrc"
+-'  49  0  ~/.zshrc
+|4,39,49,0,1707570472,"~/.zshrc"
+-'  49  0  ~/.zshrc
+|4,39,49,0,1707570472,"~/.zshrc"
+-'  49  0  ~/.zshrc
+|4,39,49,0,1707570472,"~/.zshrc"
+-'  49  0  ~/.zshrc
+|4,39,49,0,1707570472,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1707570468,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1707570468,"~/.zshrc"
 -'  10  0  ~/.bashrc
 |4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1707025313,"~/.bashrc"
 -'  10  22  ~/.config/discord/settings.json
 |4,39,10,22,1704889560,"~/.config/discord/settings.json"
 -'  10  22  ~/.config/discord/settings.json
 |4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889510,"~/.config/discord/settings.json"
 -'  1  0  ~/.config/discord/settings.json
 |4,39,1,0,1704889510,"~/.config/discord/settings.json"
 -'  1  0  ~/.config/discord/settings.json
@@ -258,188 +376,153 @@ $
 |4,39,2,0,1704889509,"~/.config/discord/settings.json"
 -'  2  0  ~/.config/discord/settings.json
 |4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
+-'  2  0  ~/.config/discord/settings.json
+|4,39,2,0,1704889509,"~/.config/discord/settings.json"
 -'  1  0  ~/.config/discord/settings.json
 |4,39,1,0,1704889505,"~/.config/discord/settings.json"
 -'  1  0  ~/.config/discord/settings.json
 |4,39,1,0,1704889505,"~/.config/discord/settings.json"
--'  1  4  /tmp/tutorz7ZLDI
-|4,39,1,4,1703251260,"/tmp/tutorz7ZLDI"
--'  1  4  /tmp/tutorz7ZLDI
-|4,39,1,4,1703251260,"/tmp/tutorz7ZLDI"
--'  1  4  /tmp/tutorz7ZLDI
-|4,39,1,4,1703251260,"/tmp/tutorz7ZLDI"
--'  1  4  /tmp/tutorz7ZLDI
-|4,39,1,4,1703251260,"/tmp/tutorz7ZLDI"
--'  1  4  /tmp/tutorz7ZLDI
-|4,39,1,4,1703251260,"/tmp/tutorz7ZLDI"
--'  1  4  /tmp/tutorz7ZLDI
-|4,39,1,4,1703251260,"/tmp/tutorz7ZLDI"
--'  1  4  /tmp/tutorz7ZLDI
-|4,39,1,4,1703251260,"/tmp/tutorz7ZLDI"
--'  1  4  /tmp/tutorz7ZLDI
-|4,39,1,4,1703251260,"/tmp/tutorz7ZLDI"
--'  5  0  ~/.config/alacritty/alacritty.yml
-|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
--'  5  0  ~/.config/alacritty/alacritty.yml
-|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
--'  5  0  ~/.config/alacritty/alacritty.yml
-|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
--'  5  0  ~/.config/alacritty/alacritty.yml
-|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
--'  5  0  ~/.config/alacritty/alacritty.yml
-|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
--'  5  0  ~/.config/alacritty/alacritty.yml
-|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
--'  5  0  ~/.config/alacritty/alacritty.yml
-|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
--'  5  0  ~/.config/alacritty/alacritty.yml
-|4,39,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
--'  9  0  ~/.config/alacritty/alacritty.yml
-|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
--'  9  0  ~/.config/alacritty/alacritty.yml
-|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
--'  9  0  ~/.config/alacritty/alacritty.yml
-|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
--'  9  0  ~/.config/alacritty/alacritty.yml
-|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
--'  9  0  ~/.config/alacritty/alacritty.yml
-|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
--'  9  0  ~/.config/alacritty/alacritty.yml
-|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
--'  9  0  ~/.config/alacritty/alacritty.yml
-|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
--'  9  0  ~/.config/alacritty/alacritty.yml
-|4,39,9,0,1692871562,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/alacritty/alacritty.yml
-|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/alacritty/alacritty.yml
-|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/alacritty/alacritty.yml
-|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/alacritty/alacritty.yml
-|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/alacritty/alacritty.yml
-|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/alacritty/alacritty.yml
-|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/alacritty/alacritty.yml
-|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/alacritty/alacritty.yml
-|4,39,1,0,1692871550,"~/.config/alacritty/alacritty.yml"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  1  0  ~/.config/nvim/init.lua
-|4,39,1,0,1692853594,"~/.config/nvim/init.lua"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  28  19  ~/.local/scripts/batterynotify
-|4,39,28,19,1692723802,"~/.local/scripts/batterynotify"
--'  117  0  ~/.zshrc
-|4,39,117,0,1692723689,"~/.zshrc"
--'  117  0  ~/.zshrc
-|4,39,117,0,1692723689,"~/.zshrc"
--'  117  0  ~/.zshrc
-|4,39,117,0,1692723689,"~/.zshrc"
--'  117  0  ~/.zshrc
-|4,39,117,0,1692723689,"~/.zshrc"
--'  117  0  ~/.zshrc
-|4,39,117,0,1692723689,"~/.zshrc"
--'  117  0  ~/.zshrc
-|4,39,117,0,1692723689,"~/.zshrc"
--'  117  0  ~/.zshrc
-|4,39,117,0,1692723689,"~/.zshrc"
--'  117  0  ~/.zshrc
-|4,39,117,0,1692723689,"~/.zshrc"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889505,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889505,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889505,"~/.config/discord/settings.json"
+-'  1  0  ~/.config/discord/settings.json
+|4,39,1,0,1704889505,"~/.config/discord/settings.json"
 
 # History of marks within files (newest to oldest):
+
+> /etc/X11/xinit/xinitrc
+	*	1707578187	0
+	"	43	0
+	.	41	0
+	+	3	0
+	+	46	0
+	+	45	4
+	+	41	130
+	+	41	0
+	+	42	0
+	+	41	129
+	+	41	0
+	+	41	42
+	+	41	41
+	+	41	0
+
+> ~/.zshrc
+	*	1707570982	0
+	"	48	0
+	^	114	10
+	.	114	10
+	+	247	42
+	+	234	3
+	+	247	3
+	+	234	0
+	+	236	0
+	+	199	12
+	+	201	24
+	+	202	0
+	+	201	24
+	+	201	0
+	+	200	1
+	+	202	0
+	+	201	0
+	+	137	15
+	+	248	37
+	+	247	39
+	+	244	0
+	+	243	0
+	+	242	38
+	+	248	43
+	+	249	101
+	+	249	127
+	+	136	0
+	+	203	19
+	+	203	20
+	+	204	0
+	+	203	19
+	+	204	0
+	+	206	54
+	+	211	97
+	+	206	0
+	+	211	0
+	+	137	12
+	+	137	16
+	+	250	0
+	+	204	0
+	+	242	0
+	+	248	44
+	+	249	0
+	+	249	65
+	+	249	32
+	+	249	65
+	+	241	67
+	+	242	0
+	+	248	0
+	+	249	65
+	+	249	101
+	+	250	0
+	+	249	0
+	+	1	60
+	+	124	32
+	+	126	0
+	+	125	25
+	+	126	57
+	+	114	10
 
 > ~/.bashrc
 	*	1707025322	0
@@ -511,67 +594,6 @@ $
 > ~/.local/scripts/batterynotify
 	*	1692723792	0
 	"	28	19
-
-> ~/.zshrc
-	*	1692723687	0
-	"	117	0
-	^	114	10
-	.	114	10
-	+	247	42
-	+	234	3
-	+	247	3
-	+	234	0
-	+	236	0
-	+	199	12
-	+	201	24
-	+	202	0
-	+	201	24
-	+	201	0
-	+	200	1
-	+	202	0
-	+	201	0
-	+	137	15
-	+	248	37
-	+	247	39
-	+	244	0
-	+	243	0
-	+	242	38
-	+	248	43
-	+	249	101
-	+	249	127
-	+	136	0
-	+	203	19
-	+	203	20
-	+	204	0
-	+	203	19
-	+	204	0
-	+	206	54
-	+	211	97
-	+	206	0
-	+	211	0
-	+	137	12
-	+	137	16
-	+	250	0
-	+	204	0
-	+	242	0
-	+	248	44
-	+	249	0
-	+	249	65
-	+	249	32
-	+	249	65
-	+	241	67
-	+	242	0
-	+	248	0
-	+	249	65
-	+	249	101
-	+	250	0
-	+	249	0
-	+	1	60
-	+	124	32
-	+	126	0
-	+	125	25
-	+	126	57
-	+	114	10
 
 > ~/monitor.sh
 	*	1692721158	0
@@ -1860,10 +1882,3 @@ $
 	+	9	5
 	+	12	33
 	+	13	18
-
-> ~/.config/dracula.yml
-	*	1689199439	0
-	"	83	0
-	^	83	0
-	.	82	5
-	+	82	5

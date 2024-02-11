@@ -1,70 +1,3 @@
-sudo make clean install
-yay -S libxinerama libx11
-clear
-sudo make clean install
-ls
-cd dmenu-5.2/
-ls
-sudo make clean install
-cd 
-ls
-clear
-ls
-cat .xinitrc
-clear
-dwm
-ls
-sudo reboot
-ls
-cat .xinitrc
-exec dwm
-ls
-clear
-shutdown now
-ls
-cat .xinitrc
-exec dwm
-ls
-sudo pacman -S --needed - < userinstalled.txt 
-clear
-pacman -S neofetch
-yay -S neofetch
-clear
-neofetch
-clear
-ls
-cat .xinitrc
-xmodmap
-xmodmap
-clear
-ls
-startx
-clear
-ls
-cd .config
-ls
-cd dwm
-ls
-vim  config.h 
-clear
-ls
-sudo make clean install
-clear
-yay -S xorg-server
-yay -S libx11
-clear
-yay -S webkit2gtk
-clear
-clear
-ls
-cd 
-cat .zshrc 
-pacman -S on-my-zsh
-sudo pacman -S on-my-zsh
-yay -S oh-my-zsh
-clear
-ls
-cat userinstalled.txt | grep oh-
 cat userinstalled.txt | grep zsh
 yay -S zsh-autosuggestions
 clear
@@ -497,4 +430,71 @@ vim .bashrc
 source .bashrc
 ls
 clear
+exit
+vim status
+clear
+git stash
+git pull
+git pull origin master
+git stash 
+git pull origin master
+rm .zsh_history 
+git pull origin master
+clear
+vim .zshrc
+clear
+ls
+exec dwm
+vim .zshrc
+eval "$(sudo  Xorg -configure)" > stat
+X -config /root/xorg.conf.new
+cat /home/kali_37/.local/share/xorg/Xorg.0.log
+cat /home/kali_37/.local/share/xorg/Xorg.0.log
+X -configure
+cat stat
+cat status 
+clear
+exit
+sudo vim /etc/pacman.conf 
+sudo vim /etc/pacman.conf 
+sudo pacman -Syu
+sudo pacman -Syy
+pacman -Ssq lib32
+pacman -Ssq lib32 | grep mesa
+pacman -Ssq lib33-mesa
+pacman -Ssq lib32-mesa
+pacman -Sy lib32-mesa
+sudo pacman -Sy lib32-mesa
+clear
+zsh
+exec startx
+startx
+clear
+zsh .zprofile 
+zsh .xinitrc
+cat .xinitrc
+clear
+ls
+cat .xinitrc
+zsh .xinitrc
+cat .Xresources 
+bash .xinitrc
+systemctl status xorg
+ps aux | grep xorg
+ps aux | grep Xorg
+ps aux | grep xorg
+clear
+xorg
+ls /etc/X11/xinit/xinitrc
+ls /etc/X11/xinit/xinitrc.d/50-systemd-user.sh 
+cat /etc/X11/xinit/xinitrc.d/50-systemd-user.sh 
+clear
+ls
+cp .xinitrc /etc/X11/xinit/xinitrc
+sudo cp .xinitrc /etc/X11/xinit/xinitrc
+vim /etc/X11/xinit/xinitrc
+sudo vim /etc/X11/xinit/xinitrc
+clear
+Display=kali_37:0 exec dwm
+#
 exit
