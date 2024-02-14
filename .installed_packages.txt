@@ -3,6 +3,7 @@ aalib
 abseil-cpp
 acl
 acpi
+acpid
 adobe-source-code-pro-fonts
 adwaita-cursors
 adwaita-icon-theme
@@ -12,6 +13,8 @@ alsa-lib
 alsa-topology-conf
 alsa-ucm-conf
 alsa-utils
+android-tools
+android-udev
 aom
 archlinux-keyring
 argon2
@@ -265,6 +268,7 @@ libev
 libevdev
 libevent
 libexif
+libfabric
 libfdk-aac
 libffi
 libfontenc
@@ -304,6 +308,7 @@ libmodplug
 libmpc
 libmpcdec
 libmpeg2
+libmtp
 libmysofa
 libndp
 libnet
@@ -475,6 +480,7 @@ npth
 nspr
 nss
 ntfs-3g
+numactl
 nvm
 ocl-icd
 oniguruma
@@ -522,6 +528,7 @@ polkit
 popt
 portaudio
 procps-ng
+protobuf
 prrte
 psmisc
 python
@@ -588,6 +595,7 @@ tpm2-tss
 tracker3
 tree-sitter
 tslib
+ttf-dejavu
 ttf-jetbrains-mono
 twolame
 tzdata
@@ -602,6 +610,8 @@ vi
 vid.stab
 vim
 vim-runtime
+visual-studio-code-bin
+visual-studio-code-bin-debug
 vlc
 vmaf
 vulkan-icd-loader

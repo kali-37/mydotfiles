@@ -56,6 +56,8 @@ nohup xbindkeys -f ~/.xbindkeysrc  && xbindkeys &
 #nohup picom -b &
 #nohup /usr/bin/emacs --daemon &
 yay -Qq | awk -F/ '{print $1}' > ~/.installed_packages.txt
+DISPLAY=":0" picom -b
+
 #nohup dunst &
 nohup sleep 2.3 && mine_monitor &
 exec dwm

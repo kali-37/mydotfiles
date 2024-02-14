@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Set the display and Xauthority variables
+export DISPLAY=:0.0
+export XAUTHORITY=/home/kali_37/.Xauthority
+
+
+logger 'Running xmodmap after laptop open from /usr/local/scripts'
+xmodmap /home/kali_37/.Xkeymap &
+
+
+

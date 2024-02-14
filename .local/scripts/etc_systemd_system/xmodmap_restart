@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# This reopens the stuffs after restart 
+# FILE LOCATION : /usr/lib/systemd/system-sleep/xmodmap_restart
+
+case $1/$2 in
+  pre/*)
+    # Commands to run before suspend
+    ;;
+  post/*)
+    echo "Running xmodmap after resume" >> /tmp/xmodmap_log
+    /usr/bin/xmodmap /home/kali_37/.local/scripts/keymapper &
+    xbindkeys -f ~/.xbindkeysrc  && xbindkeys &
+    ;;
+esac

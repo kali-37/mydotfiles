@@ -42,7 +42,6 @@ import:
   - ~/.config/alacritty/dracula.yml
 
 
-opacity: 0.0 
 
 selection:
   save_to_clipboard: false
@@ -115,3 +114,4 @@ key_bindings:
   - { key: Slash,  mods: Shift,         mode: Vi, action: SearchBackward          }
   - { key: N,                           mode: Vi, action: SearchNext              }
   - { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
+  - { key: I,      mods: Shift,         mode: Vi, action: insert          }

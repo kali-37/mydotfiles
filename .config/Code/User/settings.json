@@ -799,5 +799,6 @@
   "eslint.format.enable": true,
   "eslint.quiet": true,
   "workbench.startupEditor": "none",
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "security.workspace.trust.untrustedFiles": "open"
   }
