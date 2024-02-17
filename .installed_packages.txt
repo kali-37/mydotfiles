@@ -32,7 +32,6 @@ bash
 binutils
 bison
 bluez-libs
-brave-bin
 brightnessctl
 brotli
 bzip2
@@ -66,6 +65,7 @@ diffutils
 discord
 dnssec-anchors
 dosfstools
+dotconf
 double-conversion
 duktape
 dunst
@@ -78,6 +78,7 @@ expat
 faac
 faad2
 fakeroot
+fd
 feh
 ffmpeg
 ffmpeg4.4
@@ -170,6 +171,7 @@ java-environment-common
 java-runtime-common
 jbigkit
 jdk-openjdk
+jemalloc
 jq
 json-c
 json-glib
@@ -227,6 +229,7 @@ lib32-wayland
 lib32-xz
 lib32-zlib
 lib32-zstd
+libao
 libarchive
 libass
 libassuan
@@ -353,6 +356,7 @@ libsndfile
 libsodium
 libsoup3
 libsoxr
+libspeechd
 libsrtp
 libssh
 libssh2
@@ -371,6 +375,7 @@ libunibreak
 libunistring
 libunwind
 libupnp
+liburing
 libusb
 libutempter
 libuv
@@ -438,6 +443,7 @@ lshw
 lsof
 lua
 luajit
+luarocks
 lv2
 lz4
 lzo
@@ -446,6 +452,9 @@ mailcap
 maim
 make
 man-db
+mariadb
+mariadb-clients
+mariadb-libs
 md4c
 mesa
 mesa-utils
@@ -466,7 +475,6 @@ ncurses
 neofetch
 neon
 neovim
-neovim-nvim-treesitter
 nettle
 networkmanager
 nmap
@@ -532,8 +540,17 @@ protobuf
 prrte
 psmisc
 python
+python-attrs
 python-cairo
+python-cffi
+python-cryptography
 python-gobject
+python-packaging
+python-pip
+python-ply
+python-pycparser
+python-pyxdg
+python-wheel
 qrencode
 qt5-base
 qt5-declarative
@@ -556,6 +573,7 @@ re2
 readline
 reflector
 rhash
+ripgrep
 rtkit
 rtmpdump
 rubberband
@@ -574,6 +592,7 @@ sof-firmware
 sord
 soundtouch
 spandsp
+speech-dispatcher
 speex
 speexdsp
 spirv-tools
@@ -591,16 +610,21 @@ taglib
 tar
 texinfo
 thunar
+tmux
 tpm2-tss
 tracker3
+tree
 tree-sitter
 tslib
 ttf-dejavu
 ttf-jetbrains-mono
+ttf-mononoki-nerd
 twolame
+typescript
 tzdata
 uchardet
 unibilium
+unzip
 update-grub
 util-linux
 util-linux-libs
@@ -609,12 +633,14 @@ vapoursynth
 vi
 vid.stab
 vim
+vim-plug
 vim-runtime
 visual-studio-code-bin
 visual-studio-code-bin-debug
 vlc
 vmaf
 vulkan-icd-loader
+vundle
 wavpack
 wayland
 webrtc-audio-processing
@@ -707,6 +733,7 @@ yay-debug
 zbar
 zeromq
 zimg
+zip
 zix
 zlib
 zsh

@@ -1,27 +1,26 @@
 import = ["/home/kali_37/.config/alacritty/dracula.toml"]
-# opacity = 0.0
 
 [colors]
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 11
+size = 12
 
 [font.bold]
-family = "JetBrains Mono"
-style = "Bold"
+family = "Mononoki Nerd Font"
+style = "Light"
 
 [font.bold_italic]
-family = "JetBrains Mono"
-style = "Bold Italic"
+family = "Mononoki Nerd Font"
+style = "Light Italic"
 
 [font.italic]
-family = "JetBrains Mono"
-style = "Italic"
+family = "Mononoki Nerd Font"
+style = "Extra Light Italic"
 
 [font.normal]
-family = "JetBrains Mono"
-style = "Regular"
+family = "Mononoki Nerd Font"
+style = "ExtraLight"
 
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
@@ -323,7 +322,7 @@ save_to_clipboard = false
 program = "/usr/bin/zsh"
 
 [window]
-opacity =0.9 
+opacity =0.8 
 
 [window.class]
 general = "Alacritty"
@@ -332,3 +331,4 @@ instance = "Alacritty"
 [window.padding]
 x = 10
 y = 10
+

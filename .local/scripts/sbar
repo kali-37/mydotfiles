@@ -54,7 +54,8 @@ update_memory () {
 }
 
 update_time () { 
-	time="📆$(date "+[%a %d %b] [%I:%M %P]")" 
+	time="📆$(date "+[%a %d %b] [%I:%M %P] ")" 
+  
 }
 
 update_weather () { 
@@ -71,6 +72,7 @@ update_bat () {
 		bat_status="🔋"
 	fi
 	bat="$bat_status $bat_capacity%"
+  batterynotify
 
 }
 
@@ -123,25 +125,26 @@ display () {
 trap	"update_vol;display"		"RTMIN"
 trap	"update_backlight;display" 	"RTMIN+1"
 trap	"update_bat;display" 		"RTMIN+2"
+trap "display"    "RTMIN+3"
 # to update it from external commands
 ## kill -m "$(cat ~/.cache/pidofbar)"
 # where m = 34 + n
 
 while true
 do
-	sleep 1 & wait && { 
+	sleep 4 & wait && { 
 		# to update item ever n seconds with a offset of m
 		## [ $((sec % n)) -eq m ] && udpate_item
-		[ $((sec % 2 )) -eq 0 ] && update_time 	# update time every 5 seconds
-		[ $((sec % 5)) -eq 0 ] && update_cpu 	# update cpu every 15 seconds
-		[ $((sec % 5)) -eq 0 ] && update_memory
-		[ $((sec % 2)) -eq 0 ] && update_bat
+		[ $((sec % 8 )) -eq 0 ] && update_time 	# update time every 5 seconds
+		[ $((sec % 24 )) -eq 0 ] && update_cpu 	# update cpu every 15 seconds
+		[ $((sec % 24)) -eq 0 ] && update_memory
+		[ $((sec % 24)) -eq 0 ] && update_bat
 		[ $((sec % 3600)) -eq 2 ] && update_weather 
 		#[ $((sec % 300)) -eq 1 ] && update_event
 
-		[ $((sec % 5)) -eq 2 ] && update_internet 
+		[ $((sec % 8)) -eq 2 ] && update_internet 
 		# how often the display updates ( 5 seconds )
-		[ $((sec % 5000 )) -eq 0 ] && display
+		[ $((sec % 16)) -eq 0 ] && display
 		sec=$((sec + 1))
 	}
 done 
