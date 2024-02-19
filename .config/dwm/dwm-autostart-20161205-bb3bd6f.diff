@@ -1,6 +1,6 @@
-commit 5918623c5bd7fda155bf9dc3d33890c4ae1722d0
+commit 5918626c5bd7fda155bf9dc3d33890c4ae1722d0
 Author: Simon Bremer <simon.bremer@tum.de>
-Date:   Thu Dec 22 17:31:07 2016 +0100
+Date:   Thu Dec 24 17:31:07 2016 +0100
 
     Applied and fixed autostart patch for previous version;
 

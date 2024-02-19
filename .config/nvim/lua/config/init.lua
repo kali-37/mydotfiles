@@ -16,7 +16,9 @@ require("config.options")
 require("config.keymaps")
 require("config.autocmds")
 
+
 local plugins = "plugins"
+local functions="functions"
 
 local opts = {
 	defaults = {
@@ -42,5 +44,9 @@ local opts = {
 		notify = false,
 	},
 }
+-- From plugins remove copilot 
+--
 
 require("lazy").setup(plugins, opts)
+local Copilot=false
+  

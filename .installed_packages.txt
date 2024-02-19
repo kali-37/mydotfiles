@@ -48,6 +48,7 @@ chromaprint
 cmake
 coreutils
 cppdap
+cpupower
 cryptsetup
 curl
 dav1d
@@ -229,6 +230,7 @@ lib32-wayland
 lib32-xz
 lib32-zlib
 lib32-zstd
+libaio
 libao
 libarchive
 libass
@@ -431,11 +433,11 @@ libxxf86vm
 libyaml
 licenses
 lilv
-linux
 linux-api-headers
 linux-firmware
 linux-firmware-whence
-linux-headers
+linux-lts
+linux-lts-headers
 llvm-libs
 lm_sensors
 lsd
@@ -490,6 +492,7 @@ nss
 ntfs-3g
 numactl
 nvm
+nvtop
 ocl-icd
 oniguruma
 openal
@@ -535,6 +538,7 @@ pkgconf
 polkit
 popt
 portaudio
+postgresql-libs
 procps-ng
 protobuf
 prrte
@@ -567,6 +571,7 @@ qt5-webchannel
 qt5-webengine
 qt5-websockets
 qt5-x11extras
+radeontop
 raptor
 rav1e
 re2
@@ -603,6 +608,7 @@ startup-notification
 sudo
 svt-av1
 svt-hevc
+sysbench
 systemd
 systemd-libs
 systemd-sysvcompat

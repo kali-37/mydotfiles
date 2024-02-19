@@ -1,0 +1,6 @@
+[keyboard]
+    bindings = [
+    { key = "J", mods = "Control", action = "None" },
+    ]
+
+

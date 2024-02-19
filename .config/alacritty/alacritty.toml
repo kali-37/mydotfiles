@@ -1,7 +1,9 @@
-import = ["/home/kali_37/.config/alacritty/dracula.toml"]
+import = [" /home/kali_37/.config/alacritty/keyboard.toml ", "/home/kali_37/.config/alacritty/dracula.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
+transparent_background_colors = true
+
 
 [font]
 size = 12
@@ -30,12 +32,12 @@ mods = "Control|Shift"
 [[keyboard.bindings]]
 action = "ScrollPageUp"
 key = "K"
-mods = "Control"
+mods = "Control|Shift"
 
 [[keyboard.bindings]]
 action = "ScrollPageDown"
 key = "J"
-mods = "Control"
+mods = "Control|Shift"
 
 [[keyboard.bindings]]
 chars = "\u001BF"
@@ -322,7 +324,7 @@ save_to_clipboard = false
 program = "/usr/bin/zsh"
 
 [window]
-opacity =0.8 
+opacity =0.92
 
 [window.class]
 general = "Alacritty"
@@ -331,4 +333,5 @@ instance = "Alacritty"
 [window.padding]
 x = 10
 y = 10
+
 

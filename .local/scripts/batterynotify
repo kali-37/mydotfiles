@@ -35,5 +35,5 @@ elif [ "$BATTERY_LEVEL" -le $CRITICAL_SLEEP ] && [ "$BATTERY_DISCHARGING" -eq 1 
     notify-send "Low Battery" "${BATTERY_LEVEL}% of battery remaining." -u critical -i "battery-alert" -r 9991
     sleep 5
     systemctl suspend
-    touch SUSPEND_FILE
+    touch $SUSPEND_FILE
 fi

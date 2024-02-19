@@ -1,13 +1,3 @@
-cat userinstalled.txt | grep zsh
-yay -S zsh-autosuggestions
-clear
-ls
-cat userinstalled.txt 
-sudo pacman -S zlib zram-generator zubi
-sudo pacman -S zlib zram-generator zxing-cpp
-clear
-ls
-cat userinstalled.txt | grep z
 sudp pacman -S zimg zeromq xz unzip tzdata minizip lz0 lz4
 yay -S zimg zeromq xz unzip tzdata minizip lz0 lz4
 clear
@@ -497,4 +487,14 @@ sudo vim /etc/X11/xinit/xinitrc
 clear
 Display=kali_37:0 exec dwm
 #
+exit
+vim .
+clear
+exit
+vim 
+clear
+ls
+exit
+vim .
+exit
 exit

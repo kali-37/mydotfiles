@@ -2,6 +2,7 @@ local mapkey = require("util.keymapper").mapkey
 
 local config = function()
 	local telescope = require("telescope")
+  print("Config function on telescope!")
 	telescope.setup({
 		defaults = {
 			mappings = {

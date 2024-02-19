@@ -12,23 +12,36 @@ parse_git_branch() {
 
 # Set the prompt
 export PROMPT='%{${COLOR_USR}%}%n %{${COLOR_DIR}%}%~ %{${COLOR_GIT}%}$(parse_git_branch)%{${COLOR_DEF}%}$ '
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Options 
+
+
+  setopt correct                    # Auto correct mistakes
+  setopt extendedglob               # Extended globbing. Allows using regular expressions with *
+  setopt nocaseglob                 # Case insensitive globbing
+  setopt rcexpandparam              # Array expension with parameters
+  setopt nocheckjobs                # Don't warn about running processes when exiting
+  setopt numericglobsort            # Sort filenames numerically when it makes sense
+  setopt nobeep                     # No beep
+  setopt appendhistory              # Immediately append history instead of overwriting
+  setopt histignorealldups          # If a new command is a duplicate, remove the older one
+  setopt autocd                     # if only directory path is entered, cd there.
+  setopt inc_append_history         # save commands are added to the history immediately, otherwise only when shell exits.
+  setopt histignorespace            # Don't save commands that start with space
+
+
 
 
 #Set history size 
-HISTSIZE=5000  # max size
-SAVEHIST=5000  # max save
-HISTFILE=$HOME/.zsh_history
-# Append to the history file, don't overwrite it
-setopt APPEND_HISTORY
-# Save each command right after it has been executed
-setopt INC_APPEND_HISTORY
-# Share history across terminals
-setopt SHARE_HISTORY
-# Ignore duplicate entries in history
-setopt HIST_IGNORE_DUPS
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
 
-
+export VISUAL=/usr/local/bin/nvim
+export EDITOR=/usr/local/bin/nvim
 
 # auto completions zshrc
 autoload -U compinit && compinit
@@ -44,6 +57,7 @@ alias vim='nvim'
 alias gc='git commit'
 alias ga='git add'
 alias gs='git status'
+alias history='history 1'
 # git types...
 eval "$(ssh-agent -s)" >/dev/null  2>&1
 ssh-add ~/.ssh/github_pub/rsa_github >/dev/null  2>&1
