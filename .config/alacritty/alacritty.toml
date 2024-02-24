@@ -45,6 +45,11 @@ key = "Right"
 mods = "Control"
 
 [[keyboard.bindings]]
+chars = "\u0017"
+key = "Back"
+mods = "Control"
+
+[[keyboard.bindings]]
 chars = "\u001BB"
 key = "Left"
 mods = "Control"

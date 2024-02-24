@@ -12,7 +12,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		vim.lsp.buf.format({ name = "efm", async = true })
 	end,
 })
-
 local function save()
 	local buf = vim.api.nvim_get_current_buf()
 

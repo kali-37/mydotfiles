@@ -82,6 +82,19 @@ local config = function()
 		filetypes = { "solidity" },
 	})
 
+	-- html and css
+	lspconfig.html.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		filetypes = { "html" },
+	})
+
+	lspconfig.cssls.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		filetypes = { "css" },
+	})
+
 	-- html, typescriptreact, javascriptreact, css, sass, scss, less, svelte, vue
 	lspconfig.emmet_ls.setup({
 		capabilities = capabilities,
@@ -118,6 +131,9 @@ local config = function()
 	local alex = require("efmls-configs.linters.alex")
 	local hadolint = require("efmls-configs.linters.hadolint")
 	local solhint = require("efmls-configs.linters.solhint")
+	-- local htmlhint = require("efmls-configs.linters.htmlhint")
+	local prettier = require("efmls-configs.formatters.prettier")
+	-- local stylelint= require("efmls-configs.linters.csslint")
 
 	-- configure efm server
 	lspconfig.efm.setup({
@@ -136,6 +152,8 @@ local config = function()
 			"markdown",
 			"docker",
 			"solidity",
+			"html",
+			"css",
 		},
 		init_options = {
 			documentFormatting = true,
@@ -161,6 +179,8 @@ local config = function()
 				markdown = { alex, prettierd },
 				docker = { hadolint, prettierd },
 				solidity = { solhint },
+				html = { prettier },
+				css = { prettier },
 			},
 		},
 	})

@@ -6,12 +6,10 @@ mapkey("<leader>bp", "bprevious", "n") -- Prev buffer
 mapkey("<leader>bb", "e #", "n") -- Switch to Other Buffer
 mapkey("<leader>`", "e #", "n") -- Switch to Other Buffer
 
-
 -- Directory Navigation
 mapkey("<leader>m", "NvimTreeFocus", "n")
 mapkey("<leader>e", "NvimTreeToggle", "n")
-mapkey("<leader>gg", "Copilot disable", "n")
-mapkey("<leader>gg", "Copilot enable", "n")
+
 -- Pane and Window Navigation
 mapkey("<C-h>", "<C-w>h", "n") -- Navigate Left
 mapkey("<C-j>", "<C-w>j", "n") -- Navigate Down
@@ -47,6 +45,10 @@ mapkey("<leader>pa", "echo expand('%:p')", "n") -- Show Full File Path
 -- Comments
 keymap("n", "<C-/>", "gtc", { noremap = false })
 keymap("v", "<C-/>", "goc", { noremap = false })
+
+-- Comments additional for tmux because it interpretes C-/ and C-_
+keymap("n", "<C-_>", "goc", { noremap = false })
+keymap("n", "<C-_>", "gtc", { noremap = false })
 
 -- greatest map ever
 vim.keymap.set("x", "<leader>p", '"_dP')
