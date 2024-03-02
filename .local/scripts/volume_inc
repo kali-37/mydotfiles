@@ -1,4 +1,4 @@
 #!/bin/env sh
 
 pamixer  --allow-boost --set-limit 130 -i 10
-kill -34 "$(cat ~/.cache/pidofbar)"
+#kill -34 "$(cat ~/.cache/pidofbar)"

@@ -35,4 +35,4 @@ brightnessctl s "$new_brightness"
 
 
 
-kill -35 "$(cat ~/.cache/pidofbar)"
+#kill -35 "$(cat ~/.cache/pidofbar)"
