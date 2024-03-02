@@ -34,3 +34,4 @@
 .gitput
 .config/nvim 
 .Xresources 
+.config/waybar
