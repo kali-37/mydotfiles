@@ -1,8 +1,10 @@
 [Unit]
 Description=Unbind the touch screen from the USB HID driver
+After=Hyprland
 
 [Service]
 Type=oneshot
+ExecStartPre=sleep 2 
 ExecStart=/bin/sh -c 'ls -1 /sys/bus/hid/drivers/hid-multitouch | grep 40C3 > /sys/bus/hid/drivers/hid-multitouch/unbind'
 
 [Install]
