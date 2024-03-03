@@ -3,7 +3,6 @@
     "position": "top",
     "margin-bottom": 0,
     "modules-left": [
-      "clock",
       "hyprland/workspaces",
       "custom/time",
       "tray",
@@ -30,7 +29,7 @@
           "nvim (.*)": "<span color=\"#57A143\"></span>  $1",
           "nvim": "<span color=\"#57A143\">  Neovim</span> ",
           "ranger(.*)": "<span color=\"#ffffff\"></span>  $1",
-          //"kitty (.*)": "<span color=\"#ffffff\"></span>  $1",
+          "alacritty(.*)": "<span color=\"#ffffff\"></span>  $1",
           "Search(.*)": "<span color=\"#a855f7\"></span>  Search$1",
       },
       "separate-outputs": false
@@ -66,19 +65,20 @@
     },
 
     "custom/network": {
-      "tooltip": false,
+      "tooltip": true,
       "interval": 5,
       "exec": "exec $HOME/.config/waybar/wifi.sh"
     },
     "custom/backlight": {
-      "tooltip": false,
+      "tooltip": true,
       "interval": 5,
-      "exec": "exec $HOME/.config/waybar/battery.sh"
+      "exec": "exec $HOME/.config/waybar/backlight.sh",
+      "tooltip-format": "{exec echo $(brightnessctl g)}"
     },
     "custom/battery": {
-      "tooltip": false,
+      "tooltip": true ,
       "interval": 5,
-      "exec": "exec $HOME/.config/waybar/backlight.sh"
+      "exec": "exec $HOME/.config/waybar/battery.sh"
     },
     "temperature": {
       "format": "{icon} {temperatureC}°C",

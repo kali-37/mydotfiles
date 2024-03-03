@@ -28,6 +28,9 @@ if ((new_brightness < 0)); then
     new_brightness=0
 fi
 
+if ((new_brightness > 360)); then
+    new_brightness=360
+fi
 # Set the new brightness
 brightnessctl s "$new_brightness"
 
