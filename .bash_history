@@ -1,6 +1,3 @@
-sudp pacman -S zimg zeromq xz unzip tzdata minizip lz0 lz4
-yay -S zimg zeromq xz unzip tzdata minizip lz0 lz4
-clear
 ls
 grep userinstalled.txt 'z'
 grep userinstalled.txt 
@@ -497,4 +494,7 @@ ls
 exit
 vim .
 exit
+exit
+vim sdkfl
+clear
 exit

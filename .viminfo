@@ -5,7 +5,7 @@
 |1,4
 
 # Value of 'encoding' when this file was written
-*encoding=utf-8
+*encoding=latin1
 
 
 # hlsearch on (H) or off (h):
@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :q!
-|2,0,1707578189,,"q!"
+|2,0,1709454288,,"q!"
 :w
 |2,0,1707578187,,"w"
 :q
@@ -177,13 +177,8 @@ $
 
 # Registers:
 ""0	LINE	0
-	# start some nice programs
-	xclock -geometry 50x50-1+1 &
-	xterm -geometry 80x50+494+51 &
-	xterm -geometry 80x20+494-0 &
-	exec xterm -geometry 80x66+0+0 -name login 
-	#####
-|3,1,0,1,6,0,1707578178,"# start some nice programs","xclock -geometry 50x50-1+1 &","xterm -geometry 80x50+494+51 &","xterm -geometry 80x20+494-0 &","exec xterm -geometry 80x66+0+0 -name login ","#####"
+	sdfkldjsf lfkdsjfl
+|3,1,0,1,1,0,1709454276,"sdfkldjsf lfkdsjfl"
 "1	LINE	0
 	do [ -x "$f" ] && . "$f" done unset f fi twm&
 |3,0,1,1,1,0,1707578141,"do [ -x \"$f\" ] && . \"$f\" done unset f fi twm&"
@@ -222,40 +217,60 @@ $
 |3,0,36,0,1,0,1707578126," "
 
 # File marks:
-'0  43  0  /etc/X11/xinit/xinitrc
-|4,48,43,0,1707578189,"/etc/X11/xinit/xinitrc"
-'1  48  0  ~/.zshrc
-|4,49,48,0,1707570990,"~/.zshrc"
-'2  49  0  ~/.zshrc
-|4,50,49,0,1707570472,"~/.zshrc"
+'0  2  0  ~/.config/waybar/sdkfl
+|4,48,2,0,1709454288,"~/.config/waybar/sdkfl"
+'1  43  0  /etc/X11/xinit/xinitrc
+|4,49,43,0,1707578189,"/etc/X11/xinit/xinitrc"
+'2  48  0  ~/.zshrc
+|4,50,48,0,1707570990,"~/.zshrc"
 '3  49  0  ~/.zshrc
 |4,51,49,0,1707570472,"~/.zshrc"
-'4  10  0  ~/.bashrc
-|4,52,10,0,1707025323,"~/.bashrc"
-'5  10  22  ~/.config/discord/settings.json
-|4,53,10,22,1704889560,"~/.config/discord/settings.json"
-'6  2  0  ~/.config/discord/settings.json
-|4,54,2,0,1704889509,"~/.config/discord/settings.json"
+'4  49  0  ~/.zshrc
+|4,52,49,0,1707570472,"~/.zshrc"
+'5  10  0  ~/.bashrc
+|4,53,10,0,1707025323,"~/.bashrc"
+'6  10  22  ~/.config/discord/settings.json
+|4,54,10,22,1704889560,"~/.config/discord/settings.json"
 '7  2  0  ~/.config/discord/settings.json
 |4,55,2,0,1704889509,"~/.config/discord/settings.json"
-'8  1  4  /tmp/tutorz7ZLDI
-|4,56,1,4,1703251260,"/tmp/tutorz7ZLDI"
-'9  5  0  ~/.config/alacritty/alacritty.yml
-|4,57,5,0,1692871570,"~/.config/alacritty/alacritty.yml"
+'8  2  0  ~/.config/discord/settings.json
+|4,56,2,0,1704889509,"~/.config/discord/settings.json"
+'9  1  4  /tmp/tutorz7ZLDI
+|4,57,1,4,1703251260,"/tmp/tutorz7ZLDI"
 
 # Jumplist (newest first):
+-'  2  0  ~/.config/waybar/sdkfl
+|4,39,2,0,1709454288,"~/.config/waybar/sdkfl"
+-'  1  0  ~/.config/waybar/sdkfl
+|4,39,1,0,1709454270,"~/.config/waybar/sdkfl"
 -'  43  0  /etc/X11/xinit/xinitrc
 |4,39,43,0,1707578189,"/etc/X11/xinit/xinitrc"
+-'  43  0  /etc/X11/xinit/xinitrc
+|4,39,43,0,1707578189,"/etc/X11/xinit/xinitrc"
+-'  1  0  /etc/X11/xinit/xinitrc
+|4,39,1,0,1707577910,"/etc/X11/xinit/xinitrc"
 -'  1  0  /etc/X11/xinit/xinitrc
 |4,39,1,0,1707577910,"/etc/X11/xinit/xinitrc"
 -'  48  0  ~/.zshrc
 |4,39,48,0,1707570990,"~/.zshrc"
 -'  48  0  ~/.zshrc
 |4,39,48,0,1707570990,"~/.zshrc"
+-'  48  0  ~/.zshrc
+|4,39,48,0,1707570990,"~/.zshrc"
+-'  48  0  ~/.zshrc
+|4,39,48,0,1707570990,"~/.zshrc"
 -'  23  0  ~/.zshrc
 |4,39,23,0,1707570982,"~/.zshrc"
 -'  23  0  ~/.zshrc
 |4,39,23,0,1707570982,"~/.zshrc"
+-'  23  0  ~/.zshrc
+|4,39,23,0,1707570982,"~/.zshrc"
+-'  23  0  ~/.zshrc
+|4,39,23,0,1707570982,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1707570977,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1707570977,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1707570977,"~/.zshrc"
 -'  1  0  ~/.zshrc
@@ -268,6 +283,18 @@ $
 |4,39,49,0,1707570472,"~/.zshrc"
 -'  49  0  ~/.zshrc
 |4,39,49,0,1707570472,"~/.zshrc"
+-'  49  0  ~/.zshrc
+|4,39,49,0,1707570472,"~/.zshrc"
+-'  49  0  ~/.zshrc
+|4,39,49,0,1707570472,"~/.zshrc"
+-'  49  0  ~/.zshrc
+|4,39,49,0,1707570472,"~/.zshrc"
+-'  49  0  ~/.zshrc
+|4,39,49,0,1707570472,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1707570468,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1707570468,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1707570468,"~/.zshrc"
 -'  1  0  ~/.zshrc
@@ -288,6 +315,38 @@ $
 |4,39,10,0,1707025323,"~/.bashrc"
 -'  10  0  ~/.bashrc
 |4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  10  0  ~/.bashrc
+|4,39,10,0,1707025323,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1707025313,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1707025313,"~/.bashrc"
 -'  1  0  ~/.bashrc
@@ -336,6 +395,38 @@ $
 |4,39,10,22,1704889560,"~/.config/discord/settings.json"
 -'  10  22  ~/.config/discord/settings.json
 |4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
+-'  10  22  ~/.config/discord/settings.json
+|4,39,10,22,1704889560,"~/.config/discord/settings.json"
 -'  1  0  ~/.config/discord/settings.json
 |4,39,1,0,1704889510,"~/.config/discord/settings.json"
 -'  1  0  ~/.config/discord/settings.json
@@ -348,104 +439,16 @@ $
 |4,39,1,0,1704889510,"~/.config/discord/settings.json"
 -'  1  0  ~/.config/discord/settings.json
 |4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889510,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  2  0  ~/.config/discord/settings.json
-|4,39,2,0,1704889509,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889505,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889505,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889505,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889505,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889505,"~/.config/discord/settings.json"
--'  1  0  ~/.config/discord/settings.json
-|4,39,1,0,1704889505,"~/.config/discord/settings.json"
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/waybar/sdkfl
+	*	1709454285	0
+	"	2	0
+	^	3	0
+	.	3	0
+	+	2	9
+	+	3	0
 
 > /etc/X11/xinit/xinitrc
 	*	1707578187	0
@@ -1867,18 +1870,3 @@ $
 	.	6	5
 	+	7	0
 	+	6	5
-
-> ~/Documents/C_programming/doublelinked.c
-	*	1689202255	0
-	"	13	17
-	^	13	18
-	.	13	18
-	+	1	17
-	+	10	0
-	+	3	0
-	+	4	0
-	+	12	6
-	+	12	5
-	+	9	5
-	+	12	33
-	+	13	18

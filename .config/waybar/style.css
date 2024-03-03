@@ -6,20 +6,21 @@
   padding: 0;
 }
 #waybar {
-  background: #1e222a;
+  background: black;
   color: #eeeeef;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Hack Nerd Font";
 }
-
 #workspaces button {
   padding: 0 5px;
-  color: #eeeeef;
+  background-color: #303643;
+  color: white;
 }
 /* Fix: active workspace doesn't show up */
 /* #workspaces button.focused { */
 #workspaces button.active {
-  color: #fa5aa4;
+  background-color: #303643;
+  color: white;
 }
 
 #custom-powermenu,
@@ -48,6 +49,9 @@
 
 #tray {
   margin-left: 4px;
+  font-size:10px;
+  color:pink;
+  background-color: #303643;
 }
 
 #custom-updates {

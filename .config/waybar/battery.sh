@@ -11,7 +11,7 @@ update_bat () {
 	fi
 	bat="$bat_status $bat_capacity%"
   echo $bat
-#  batterynotify
+  batterynotify
 }
 update_bat
 

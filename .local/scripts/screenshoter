@@ -1,12 +1,27 @@
 #!/bin/env sh
 
-if [ "$1" = "1" ]; then 
-  save_dir="$HOME/screenshots"
-  mkdir -p "$save_dir"
 
-  file_name="$(date +'%Y-%m-%d_%H-%M-%S').png"
+# xorg used to be 
+#if [ "$1" = "1" ]; then 
+#  save_dir="$HOME/screenshots"
+#  mkdir -p "$save_dir"
+#
+#  file_name="$(date +'%Y-%m-%d_%H-%M-%S').png"
+#
+#  maim -s "$save_dir/$file_name"
+#else
+#  maim -s | xclip -selection clipboard -target image/png
+#fi
 
-  maim -s "$save_dir/$file_name"
-else
-  maim -s | xclip -selection clipboard -target image/png
+
+
+if [[ $1 == rc ]]; then
+    grim -g "$(slurp -b '#000000b0' -c '#00000000')" - | wl-copy
+    notify-send 'Copied to Clipboard' Screenshot
+
+elif [[ $1 == rf ]]; then
+    mkdir -p ~/Picture/screenshots
+    filename=~/Picture/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png
+    grim -g "$(slurp -b '#000000b0' -c '#00000000')" $filename
+    notify-send 'Screenshot Taken' $filename
 fi

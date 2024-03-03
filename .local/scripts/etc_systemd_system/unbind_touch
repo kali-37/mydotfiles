@@ -1,0 +1,9 @@
+[Unit]
+Description= Unbind the touch screen from the USB HID driver
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c ls -1 /sys/bus/hid/drivers/hid-multitouch | grep 40C3 > /sys/bus/hid/drivers/hid-multitouch/unbind
+
+[Install]
+WantedBy=multi-user.target
