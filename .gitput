@@ -5,6 +5,7 @@
 .config/doom
 .config/Thunar
 .config/picom
+.config/hypr/
 .gitignore
 .bash_history
 .bash_logout

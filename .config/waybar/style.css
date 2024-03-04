@@ -37,6 +37,7 @@
 #custom-battery,
 #custom-time,
 #custom-network {
+  border:0.4px solid white;
   padding: 4px 8px;
   background-color: #303643;
   border-radius: 30px;
