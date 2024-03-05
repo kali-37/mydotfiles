@@ -1,21 +1,3 @@
-ls
-grep userinstalled.txt 'z'
-grep userinstalled.txt 
-grep z  userinstalled.txt 
-yay -S zvbi zstd
-clear
-yay -S zvbi zstd
-clear
-grep z  userinstalled.txt 
-grep a  userinstalled.txt 
-yay -S xorg-xbacklight xorg-xodmap xorg-xrandr xorg-xwayland 
-clear
-yay -S xorg-xbacklight xorg-xodmap xorg-xrandr xorg-xwayland 
-clear
-grep a  userinstalled.txt 
-yay -S xorg-xgama xorg-xlsatoms xorg-fonts-alias-100dpi
-clear
-grep x* userinstalled.txt 
 grep xorg  userinstalled.txt 
 yay -S xorg-xsetroot xorg-xset xorg-xrefresh xorg-xrdb xorg-xprop xorg-xpr xorg-xlsclients xorg-xinput xorg-xhost
 clear
@@ -497,4 +479,22 @@ exit
 exit
 vim sdkfl
 clear
+exit
+# DATE: Oct 28 2018.
+# NOTE: From comment #61 at: https://bugs.launchpad.net/ubuntu/+source/linux/+bug/522998
+TMPLIST=/tmp/xhci-dev-list
+# Original script was: case "${1}" in hibernate|suspend)
+case $1/$2 in   pre/*)     echo "$0: Going to $2...";     echo -n '' > $TMPLIST;           for i in `ls /sys/bus/pci/drivers/xhci_hcd/ | egrep '[0-9a-z]+\:[0-9a-z]+\:.*$'`; do
+               echo -n "$i" | tee /sys/bus/pci/drivers/xhci_hcd/unbind;            echo "$i" >> $TMPLIST;           done;         ;;   post/*)     echo "$0: Waking up from $2...";     for i in `cat $TMPLIST`; do
+              echo -n "$i" | tee /sys/bus/pci/drivers/xhci_hcd/bind;     done;     rm $TMPLIST;         ;; esac
+ls /sys/bus/pci/drivers/xhci_hcd/ | egrep '[0-9a-z]+\:[0-9a-z]+\:.*$'
+          for i in `ls /sys/bus/pci/drivers/xhci_hcd/ | egrep '[0-9a-z]+\:[0-9a-z]+\:.*$'`; do
+               echo -n "$i" | tee /sys/bus/pci/drivers/xhci_hcd/unbind
+TMPLIST=/tmp/xhci-dev-list
+    echo -n '' > $TMPLIST
+          for i in `ls /sys/bus/pci/drivers/xhci_hcd/ | egrep '[0-9a-z]+\:[0-9a-z]+\:.*$'`; do
+               echo -n "$i" | tee /sys/bus/pci/drivers/xhci_hcd/unbind;            echo "$i" >> $TMPLIST;           done
+        ;;
+sudo -i
+sudo tlp-stat -b
 exit

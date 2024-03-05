@@ -39,6 +39,7 @@
 #custom-network {
   border:0.4px solid white;
   padding: 4px 8px;
+  font-weight:bold;
   background-color: #303643;
   border-radius: 30px;
   margin: 6px 4px;
